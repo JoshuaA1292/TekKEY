@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TekKEY · How it works</title>
+<meta name="description" content="A key answers whether a caller may send orders. The owner asks what it can cost. The bounded key answers that, with a proof run on an exact copy of the exchange.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav wrap" aria-label="site">
+  <a class="brand" href="/">TekKEY · Bounded keys</a>
+  <a href="/">Results</a>
+  <a href="/race.html">Live race</a>
+  <a href="/tests.html">Tests</a>
+  <a href="/how.html" aria-current="page">How it works</a>
+</nav>
+
+<header class="top">
+  <div class="wrap">
+    <h1 class="thesis">How it works</h1>
+    <p class="sub">A key answers one question: may this caller send orders. The owner asks a different one: what is the most this can cost me. The bounded key answers the second.</p>
+  </div>
+</header>
+
+<main class="wrap how">
+
+  <section id="q" aria-labelledby="q-h">
+    <div class="sec-head"><h2 id="q-h"><span class="n">0</span>The question</h2></div>
+    <p class="sec-sub">Why an ordinary API key is the wrong object to hand an agent.</p>
+    <p>A key answers "may this caller send orders". The owner asks "what is the most this can cost me". No key answers that. 253 real stop-limit orders placed by LLM wallets, every one of them with zero allowance for the loss it could realize, show the gap is real.</p>
+  </section>
+
+  <section id="computer" aria-labelledby="computer-h">
+    <div class="sec-head"><h2 id="computer-h"><span class="n">1</span>An exchange is a computer</h2></div>
+    <p class="sec-sub">The observation that makes a proof possible.</p>
+    <p>Orders are instructions. The matching engine executes them deterministically (<a href="https://arxiv.org/abs/2608.28803">arXiv 2608.28803</a>). We built an exact engine and ran programs on it. An exact copy of the engine is a perfect simulator: what it says will happen is what the exchange will do.</p>
+  </section>
+
+  <section id="wire" aria-labelledby="wire-h">
+    <div class="sec-head"><h2 id="wire-h"><span class="n">2</span>The exchange over a wire</h2></div>
+    <p class="sec-sub">The venue the programs actually run on.</p>
+    <p>A real exchange process with TCP, UDP and shared memory, parent and child orders, OCO, triggers. The engine was checked instruction by instruction against the reference: 1.8M instructions, 0 mismatches.</p>
+  </section>
+
+  <section id="key" aria-labelledby="key-h">
+    <div class="sec-head"><h2 id="key-h"><span class="n">3</span>The bounded key</h2></div>
+    <p class="sec-sub">Three pieces turn a strategy into a key with a proved worst case.</p>
+    <p><b>policyc</b> compiles the strategy and rejects what can never be safe. <b>verify</b> searches every future on a copy of the engine and returns a certificate, or the counterexample path that loses more than allowed. <b>venued</b> mints one-program keys, escrows the certified loss and keeps the 24 h budget: a bound that does not fit is refused with 409.</p>
+  </section>
+
+  <section id="gateway" aria-labelledby="gateway-h">
+    <div class="sec-head"><h2 id="gateway-h"><span class="n">4</span>The gateway</h2></div>
+    <p class="sec-sub">Each piece answers one question; nothing here is simulated unless the row says so.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Piece</th><th>What it answers</th></tr></thead>
+        <tbody>
+          <tr><td>Owner, author and program keys</td><td class="wrap">Who may ask for a program, who may write one, and which single program a minted key can run.</td></tr>
+          <tr><td>The ledger</td><td class="wrap">Every certificate, escrow, fill and budget entry, in one database the pages read back.</td></tr>
+          <tr><td>Capital One Nessie</td><td class="wrap">The bank. Every account, escrow and settlement is real.</td></tr>
+          <tr><td>Daytona</td><td class="wrap">Where the agent runs: a sandbox that can only reach the gateway.</td></tr>
+          <tr><td>Factory Droid</td><td class="wrap">Counterexample in, patched program out.</td></tr>
+          <tr><td>Photon 2.0</td><td class="wrap">The owner's phone: a message per certificate, and a reply that freezes the key.</td></tr>
+          <tr><td>Chalk Model Gateway</td><td class="wrap">Every Grok decision, with the route recorded per call. claude-* models go to Anthropic directly.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="tests" aria-labelledby="tests-h">
+    <div class="sec-head"><h2 id="tests-h"><span class="n">5</span>The tests</h2></div>
+    <p class="sec-sub">Nine live tests, each with an oracle that is not the model's opinion.</p>
+    <p>The <a href="/tests.html">Tests page</a> runs nine tests against the real venue: the audit of the 253 real orders, verifier speed, programs on the live tape, the 24 h window, a leaked key, first-pass certification, prompt injection, the race and the unplugged sandbox. Every number on that page links to the run that produced it.</p>
+  </section>
+
+  <section id="race" aria-labelledby="race-h">
+    <div class="sec-head"><h2 id="race-h"><span class="n">6</span>The race</h2></div>
+    <p class="sec-sub">The same model trades two accounts; only the key differs.</p>
+    <p>On the <a href="/race.html">race page</a> one model trades two real accounts on the same exchange with the same tape and the same messages, attacks included. One account holds an ordinary key, the other a bounded key. You can <a href="/race.html?mode=backtest">replay the flash crash</a> in about four minutes and read every round's transcript.</p>
+  </section>
+
+  <section id="notclaimed" aria-labelledby="notclaimed-h">
+    <div class="sec-head"><h2 id="notclaimed-h">What is not claimed</h2></div>
+    <p class="sec-sub">The limits of the result, stated plainly.</p>
+    <p>Certificates are conditional on their assumptions: a print that jumps more than the assumed gap is outside the proof, and the pages count those moments. A model that resists every attack shows no difference between the two keys. The bank is a sandbox.</p>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>Code and results.</span>
+  <a href="https://github.com/JoshuaA1292/TekKEY">github.com/JoshuaA1292/TekKEY</a>
+  <a href="https://github.com/JoshuaA1292/TekKEY/blob/main/RESULTS-2026-10-17.md">RESULTS</a>
+  <a href="/">Results</a>
+  <a href="/race.html">Live race</a>
+  <a href="/tests.html">Tests</a>
+  <a href="/how.html">How it works</a>
+</footer>
+
+</body>
+</html>

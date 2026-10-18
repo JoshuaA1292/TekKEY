@@ -359,3 +359,29 @@ footer { padding-block: 32px 56px; border-top: 1px solid var(--line); font-size:
   .kv { grid-template-columns: 1fr; gap: 2px 0; }
   .kv .v { margin-bottom: 8px; }
 }
+
+/* ---------- shared nav + section captions (all pages) ---------- */
+.nav { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; padding-block: 14px; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--fg-2); }
+.nav .brand { margin-right: auto; color: var(--fg); font-weight: 500; text-decoration: none; }
+.nav a { text-decoration: none; color: var(--fg-2); }
+.nav a:hover { color: var(--fg); }
+.nav a[aria-current="page"] { color: var(--fg); font-weight: 600; border-bottom: 2px solid var(--fg); padding-bottom: 2px; }
+.sec-sub { margin: -16px 0 24px; font-size: 14px; line-height: 1.5; color: var(--fg-2); max-width: 72ch; }
+.sec-sub .mono { color: var(--fg); }
+.sec-sub.lead { margin-top: 0; }
+.pill.paused { border-style: solid; border-color: var(--line-strong); color: var(--fg-2); text-transform: none; letter-spacing: 0; }
+.sec-head .pill { align-self: center; }
+.card .what { font-size: 12px; line-height: 1.45; color: var(--fg-3); }
+.intro { margin-top: 20px; color: var(--fg-2); font-size: clamp(16px, 1.5vw, 18px); max-width: 60ch; }
+.how h2 { font-size: 20px; letter-spacing: -0.01em; }
+.how p { font-size: 15px; color: var(--fg-2); max-width: 72ch; margin-top: 12px; }
+.how p + p { margin-top: 10px; }
+.how p b, .how p code { color: var(--fg); }
+.how .n { font-family: var(--mono); color: var(--fg-3); margin-right: 10px; font-size: 14px; }
+.how table td:first-child { font-weight: 500; color: var(--fg); }
+.how table td { white-space: normal; }
+.how table td.wrap { min-width: 0; max-width: none; }
+@media (max-width: 560px) {
+  .nav { gap: 6px 14px; }
+  .sec-sub { margin-top: -8px; }
+}

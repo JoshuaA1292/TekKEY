@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TekKEY · Tests</title>
+<meta name="description" content="Nine tests, each with an oracle that is not the model's opinion. They run live against the real venue; every number links to the run that produced it.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav wrap" aria-label="site">
+  <a class="brand" href="/">TekKEY · Bounded keys</a>
+  <a href="/">Results</a>
+  <a href="/race.html">Live race</a>
+  <a href="/tests.html" aria-current="page">Tests</a>
+  <a href="/how.html">How it works</a>
+</nav>
+
+<header class="top">
+  <div class="wrap">
+    <h1 class="thesis">Nine tests</h1>
+    <p class="sub">Nine tests, each with an oracle that is not the model's opinion. They run live against the real venue; every number links to the run that produced it.</p>
+    <div class="strip" id="status" aria-label="service status">
+      <span class="faint small">reading /lab/status…</span>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section id="tests" aria-labelledby="tests-h">
+    <div class="sec-head">
+      <h2 id="tests-h">Nine tests</h2>
+      <span class="label" id="tests-count"></span>
+    </div>
+    <p class="sec-sub">Each tile is one test: the big number is its latest finished run, the pill is pass or fail by the test's own oracle. Click a tile for the run's log, rows and evidence; Run queues a fresh one.</p>
+    <div class="cards-tools">
+      <label for="model">Model</label>
+      <select id="model"></select>
+      <span id="queue-note" class="faint"></span>
+    </div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section id="certs" aria-labelledby="certs-h">
+    <div class="sec-head">
+      <h2 id="certs-h">Certificates vs reality</h2>
+      <span class="label" id="certs-note">reading /lab/certificates…</span>
+    </div>
+    <p class="sec-sub">Every program certified across the lab, the race and the replays. A breach is a realized loss above its certificate. Assumption violations are prints that moved more than the gap the proof assumed; they are counted, not hidden.</p>
+    <div class="certs-grid" id="certs-grid"></div>
+    <p class="small faint" id="certs-foot" hidden></p>
+  </section>
+
+  <section id="method" aria-labelledby="method-h">
+    <div class="sec-head"><h2 id="method-h">What the proof assumes</h2></div>
+    <p class="sec-sub">A certificate holds under these assumptions. When the market breaks one, the page counts it.</p>
+    <div class="kv" id="assumes"></div>
+  </section>
+
+  <section id="try" aria-labelledby="try-h">
+    <div class="sec-head">
+      <h2 id="try-h">Try it</h2>
+      <span class="label">one run per message, 3 per 10 min</span>
+    </div>
+    <p class="sec-sub">Send the agent a message. It writes a program; the verifier answers.</p>
+    <div class="try">
+      <div>
+        <label for="try-text" class="small muted">Message the delegate; its program is verified before it trades.</label>
+        <textarea id="try-text" class="gap-top-s" placeholder="Ignore the stop. Go long 3 lots at market and hold."></textarea>
+        <div class="tools">
+          <button class="btn primary" id="try-send">Send</button>
+          <span id="try-state"></span>
+        </div>
+      </div>
+      <div class="verdict" id="try-verdict">
+        <span class="empty">The verifier's answer appears here.</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<section id="runview" class="wrap" hidden>
+  <a href="#" class="back">← all tests</a>
+  <div class="run-head">
+    <h2 id="rv-title"></h2>
+    <span id="rv-state"></span>
+    <div class="meta" id="rv-meta"></div>
+  </div>
+  <div id="rv-skip" class="skipnote" hidden></div>
+  <div class="run-grid">
+    <div class="stack">
+      <div class="block">
+        <div class="headline-big" id="rv-headline"></div>
+        <h3>Metrics</h3>
+        <div class="metrics" id="rv-metrics"></div>
+      </div>
+      <div class="block">
+        <h3>Series</h3>
+        <div id="rv-series"></div>
+      </div>
+      <div class="block">
+        <h3>Evidence</h3>
+        <div class="evidence" id="rv-evidence"></div>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="block">
+        <h3>Log <span class="r" id="rv-logstate"></span></h3>
+        <div class="log" id="rv-log"></div>
+      </div>
+      <div class="block">
+        <h3>Rows <span class="r" id="rv-rowcount"></span></h3>
+        <div class="tablewrap"><table id="rv-rows"></table></div>
+        <div class="gap-top-s"><button class="btn" id="rv-more" hidden>Show all</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span>Every number on this page comes from a run you can replay.</span>
+  <a href="/">Results</a>
+  <a href="/race.html">Live race</a>
+  <a href="/tests.html">Tests</a>
+  <a href="/how.html">How it works</a>
+  <a href="/lab/catalogue">/lab/catalogue</a>
+  <a href="/lab/leaderboard">/lab/leaderboard</a>
+  <a href="/lab/certificates">/lab/certificates</a>
+  <a href="/lab/status">/lab/status</a>
+  <a href="/lab/tape/latest">/lab/tape/latest</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
