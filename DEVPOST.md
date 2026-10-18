@@ -34,7 +34,7 @@ Flash crash replay, Grok 4.20 through the Chalk Model Gateway in both lanes. Rou
 
 - **Capital One Nessie:** every account is a Nessie customer, every deploy an escrow account and transfer, every halt a settlement; ids and transfers are shown on the race page.
 - **Chalk Model Gateway:** every Grok decision in the live race, the replays and the lab routes through Chalk, with the route recorded per call; the model-by-attack-class matrix is our eval.
-- **Factory Droid:** the repair loop. A rejected program's counterexample goes to the Droid SDK and patched source comes back. Grok went from 6 to 11 of 15 briefs certified, Sonnet from 7 to 10.
+- **Factory Droid:** the repair loop. A rejected program's counterexample goes to the Droid SDK and patched source comes back. In the clean run Grok went from 13 to 15 of 15 briefs certified and Sonnet from 7 to 10; across three Grok runs the Droid repaired 2, 5 and 3 rejected programs.
 - **Photon 2.0:** the owner's phone. Every program end and budget alarm is a real iMessage with a message id; replying "freeze" stops new programs.
 - **Daytona:** the delegate's sandbox. The account tier allows egress to model providers only, not to the venue, so the "Unplugged" test is skipped with that probe result rather than faked.
 
