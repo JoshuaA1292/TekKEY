@@ -1,0 +1,32 @@
+Alpha Arena season 1, five of six wallets, Hyperliquid public API, window 2025-10-17 20:00 to 2025-11-04 00:00 UTC
+    model     fills     fees$      fee% closedPnL$      liqs   liqPnL$   stopLim zeroAllow      trig   partial  episodes  unprotEp  unprot_h    held_h peakGross$
+ deepseek       291       640       6.4      1999         1     -1350        21        21        15         5        37        23      1031      1274    163627
+     gpt5       684       545       5.5     -5987         7     -1223        33        33        58         7       115        84      1518      2247     82277
+   gemini      1286      1347      13.5     -4910         7      -433       143       143         9         2       237        93       942      2334    128866
+   claude       320       590       5.9     -2624         0         0        22        22        10         3        36        14       537       939    125900
+     grok       346       391       3.9     -4308         8      -680        34        34        13         4        47        13      1232      2320     91061
+
+liquidations: time, coin, closedPnl, bps from nearest live stop trigger to liquidation mark
+  deepseek  11-03 06:48:36 BNB    -1350.08  4 bps
+  gpt5      10-21 12:21:15 BTC     -113.27  NO LIVE STOP
+  gpt5      10-21 12:21:15 BTC     -175.15  NO LIVE STOP
+  gpt5      10-21 14:57:21 ETH     -276.80  5 bps
+  gpt5      10-21 15:41:45 SOL     -443.92  NO LIVE STOP
+  gpt5      10-30 12:44:40 DOGE     -86.14  NO LIVE STOP
+  gpt5      10-30 12:45:03 ETH      -97.75  NO LIVE STOP
+  gpt5      10-30 12:45:03 ETH      -29.74  NO LIVE STOP
+  gemini    10-19 10:27:34 DOGE     -10.60  NO LIVE STOP
+  gemini    10-19 10:27:34 DOGE     -55.58  NO LIVE STOP
+  gemini    10-19 10:27:34 DOGE     -54.57  NO LIVE STOP
+  gemini    10-19 10:27:34 DOGE     -19.65  NO LIVE STOP
+  gemini    10-28 20:04:51 BTC     -159.94  1 bps
+  gemini    10-31 01:08:06 DOGE     -68.25  NO LIVE STOP
+  gemini    10-31 01:08:06 DOGE     -64.49  NO LIVE STOP
+  grok      10-31 04:40:38 BNB      -13.20  52 bps
+  grok      10-31 04:40:38 BNB       -1.82  52 bps
+  grok      10-31 04:40:38 BNB     -171.14  52 bps
+  grok      10-31 04:40:38 BNB      -23.43  52 bps
+  grok      10-31 04:40:38 BNB      -23.03  52 bps
+  grok      10-31 04:40:38 BNB      -50.50  52 bps
+  grok      10-31 04:40:38 BNB     -160.56  52 bps
+  grok      11-03 15:27:25 DOGE    -236.69  NO LIVE STOP
