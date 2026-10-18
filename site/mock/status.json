@@ -1,0 +1,41 @@
+{
+ "t": 1792245900000,
+ "services": {
+  "venue": {
+   "name": "Build A exchange + venued",
+   "value": "real",
+   "live": true,
+   "reason": "minsky/build/{policyc,verify,replay,venued} present; venued reconcile ok"
+  },
+  "llm": {
+   "name": "Chalk Model Gateway",
+   "value": "chalk",
+   "live": true,
+   "reason": "CHALK_ROUTER_API_KEY + CHALK_ENV_ID set; last call 200"
+  },
+  "bank": {
+   "name": "Capital One Nessie",
+   "value": "nessie",
+   "live": true,
+   "reason": "NESSIE_API_KEY set; customer + account created"
+  },
+  "sandbox": {
+   "name": "Daytona",
+   "value": "daytona",
+   "live": true,
+   "reason": "DAYTONA_API_KEY set; sandbox create/exec/delete ok"
+  },
+  "phone": {
+   "name": "Photon 2.0",
+   "value": "photon",
+   "live": false,
+   "reason": "PHOTON_PROJECT_ID unset; alarms kept at /photon/outbox"
+  },
+  "droid": {
+   "name": "Factory Droid",
+   "value": "factory-sdk",
+   "live": true,
+   "reason": "FACTORY_API_KEY set; droid-sdk session ok"
+  }
+ }
+}

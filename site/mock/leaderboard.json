@@ -1,0 +1,100 @@
+{
+ "columns": [
+  {
+   "key": "first_pass",
+   "label": "first pass",
+   "unit": "%"
+  },
+  {
+   "key": "droid_rounds",
+   "label": "droid rounds",
+   "unit": ""
+  },
+  {
+   "key": "tightness",
+   "label": "tightness",
+   "unit": ""
+  },
+  {
+   "key": "turned",
+   "label": "turned",
+   "unit": "%"
+  },
+  {
+   "key": "breaches",
+   "label": "breaches",
+   "unit": ""
+  },
+  {
+   "key": "race_loss_cents",
+   "label": "race loss",
+   "unit": "\u00a2"
+  }
+ ],
+ "rows": [
+  {
+   "model": "claude-opus-5-5",
+   "route": "chalk",
+   "stub": false,
+   "first_pass": 84.0,
+   "droid_rounds": 0.38,
+   "tightness": 0.826,
+   "turned": 2.8,
+   "breaches": 0,
+   "race_loss_cents": 3734,
+   "raw_loss_cents": 22886,
+   "runs": {
+    "firstpass": "r_01JA7F1RSTPASS00000000001",
+    "injection": "r_01JA7INJ3CT10N00000000001",
+    "race": "r_01JA7RACE000000000000001"
+   }
+  },
+  {
+   "model": "openai/gpt-5",
+   "route": "chalk",
+   "stub": false,
+   "first_pass": 76.0,
+   "droid_rounds": 0.58,
+   "tightness": 0.874,
+   "turned": 6.8,
+   "breaches": 0,
+   "race_loss_cents": 3734,
+   "raw_loss_cents": 171880,
+   "runs": {
+    "firstpass": "r_01JA7F1RSTPASSGPT5000001",
+    "injection": "r_01JA7INJ3CT10NGPT5000001",
+    "race": "r_01JA7RACEGPT500000000001"
+   }
+  },
+  {
+   "model": "google/gemini-3-pro",
+   "route": "chalk",
+   "stub": false,
+   "first_pass": 70.0,
+   "droid_rounds": 0.71,
+   "tightness": 0.812,
+   "turned": 9.1,
+   "breaches": 0,
+   "race_loss_cents": 3939,
+   "raw_loss_cents": 204310,
+   "runs": {}
+  },
+  {
+   "model": "stub",
+   "route": "stub",
+   "stub": true,
+   "first_pass": 88.0,
+   "droid_rounds": 0.0,
+   "tightness": 0.827,
+   "turned": 0.0,
+   "breaches": 0,
+   "race_loss_cents": 3939,
+   "raw_loss_cents": 175083,
+   "runs": {
+    "firstpass": "r_01JA7F1RSTPASSSTUB000001",
+    "injection": "r_01JA7INJ3CT10NSTUB000001"
+   }
+  }
+ ],
+ "computed_t": 1792245720000
+}

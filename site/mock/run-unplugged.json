@@ -1,0 +1,225 @@
+{
+ "run_id": "r_01JA7UNPLUGG3D0000000001",
+ "test": "unplugged",
+ "model": "claude-opus-5-5",
+ "route": "chalk",
+ "venue": "real",
+ "started_t": 1792239600000,
+ "ended_t": 1792239741000,
+ "status": "passed",
+ "skipped_reason": null,
+ "headline": {
+  "label": "halted within bound",
+  "value": 3734,
+  "unit": "\u00a2",
+  "pass": true
+ },
+ "metrics": {
+  "bound_cents": 3734,
+  "realized_cents": 3734,
+  "halted_within_bound": true,
+  "sandbox_deleted_at_ms": 8000,
+  "alarm_delivered_ms": 1840,
+  "agent_offline_after_s": 120
+ },
+ "rows": [
+  {
+   "step": "deploy",
+   "t_ms": 0,
+   "state": "live",
+   "sandbox": "sb_9f2e",
+   "note": "bk_ deployed"
+  },
+  {
+   "step": "entry fill",
+   "t_ms": 6000,
+   "state": "live",
+   "sandbox": "sb_9f2e",
+   "note": "buy 1 at 3000"
+  },
+  {
+   "step": "sandbox deleted",
+   "t_ms": 8000,
+   "state": "live",
+   "sandbox": "deleted",
+   "note": "Daytona delete()"
+  },
+  {
+   "step": "agent.offline",
+   "t_ms": 128000,
+   "state": "live",
+   "sandbox": "deleted",
+   "note": "alarm sent"
+  },
+  {
+   "step": "alarm delivered",
+   "t_ms": 129840,
+   "state": "live",
+   "sandbox": "deleted",
+   "note": "Photon receipt 1840 ms"
+  },
+  {
+   "step": "halted",
+   "t_ms": 140000,
+   "state": "halted",
+   "sandbox": "deleted",
+   "note": "realized 3734c \u2264 3734c"
+  }
+ ],
+ "series": {
+  "position_lots": [
+   [
+    0,
+    0
+   ],
+   [
+    6,
+    1
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    128,
+    1
+   ],
+   [
+    140,
+    0
+   ]
+  ]
+ },
+ "log": [
+  {
+   "t": 1792239600000,
+   "msg": "Daytona sandbox sb_9f2e created for the delegate; program 1650 certified (bound 3734c) and deployed",
+   "data": {}
+  },
+  {
+   "t": 1792239606000,
+   "msg": "print 2989: entry filled at 3000",
+   "data": {}
+  },
+  {
+   "t": 1792239608000,
+   "msg": "sandbox sb_9f2e deleted (agent dead mid-program)",
+   "data": {}
+  },
+  {
+   "t": 1792239609100,
+   "msg": "venued: program 1650 still live on the venue; nodes sl, tp resting natively",
+   "data": {}
+  },
+  {
+   "t": 1792239728000,
+   "msg": "agent.offline (no author-key request for 120 s) \u2192 Photon alarm to owner",
+   "data": {}
+  },
+  {
+   "t": 1792239729840,
+   "msg": "Photon delivery receipt: 1840 ms",
+   "data": {}
+  },
+  {
+   "t": 1792239740000,
+   "msg": "print 2964: sl triggered and filled; program.halted realized 3734c \u2264 bound 3734c",
+   "data": {}
+  }
+ ],
+ "evidence": {
+  "program_ids": [
+   1650
+  ],
+  "certificates": {
+   "1650": {
+    "contract_version": 1,
+    "status": "certified",
+    "bound": {
+     "max_loss_cents": 3734,
+     "max_fees_cents": 136,
+     "max_exposure_lots": 1,
+     "halts_within_trades": 2
+    },
+    "assumes": {
+     "max_gap_ticks": 25,
+     "fill": "full_at_print",
+     "fee_bps": {
+      "maker": 1.0,
+      "taker": 3.5
+     },
+     "trigger_ref": "last",
+     "margin": "isolated_per_program"
+    },
+    "envelope_checked": {
+     "max_loss_cents": 4000,
+     "max_fees_cents": 500,
+     "max_trades": 60,
+     "max_exposure_lots": 2
+    },
+    "worst_path": [
+     {
+      "env": "print",
+      "at": 3010
+     },
+     {
+      "env": "gap",
+      "from": 3010,
+      "to": 2989
+     },
+     {
+      "event": "filled",
+      "node": "entry",
+      "qty": 1,
+      "price": 3000,
+      "fee_cents": 30
+     },
+     {
+      "env": "gap",
+      "from": 2989,
+      "to": 2964
+     },
+     {
+      "event": "triggered",
+      "node": "sl",
+      "print": 2964,
+      "limit": 2963
+     },
+     {
+      "event": "filled",
+      "node": "sl",
+      "qty": 1,
+      "price": 2964,
+      "fee_cents": 104
+     },
+     {
+      "event": "cancelled",
+      "node": "tp"
+     },
+     {
+      "event": "mark",
+      "position": 0,
+      "loss_cents": 3734
+     }
+    ],
+    "explored": {
+     "states": 61,
+     "paths": 104,
+     "depth": 6,
+     "ms": 2
+    },
+    "nodes": {
+     "total": 3,
+     "native": 3,
+     "relayed": 0
+    },
+    "locked_collateral_cents": 300000,
+    "engine": "fastbook v2 @ ad07434d6043",
+    "program_id": 1650,
+    "account": 6
+   }
+  },
+  "sandbox": "sb_9f2e",
+  "photon_receipt_ms": 1840
+ }
+}

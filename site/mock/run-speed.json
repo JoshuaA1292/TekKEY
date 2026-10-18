@@ -1,0 +1,204 @@
+{
+ "run_id": "r_01JA7SPEED00000000000001",
+ "test": "speed",
+ "model": "claude-opus-5-5",
+ "route": "none",
+ "venue": "real",
+ "started_t": 1792243800000,
+ "ended_t": 1792243885744,
+ "status": "passed",
+ "skipped_reason": null,
+ "headline": {
+  "label": "3 nodes, 1 instrument",
+  "value": 2,
+  "unit": "ms",
+  "pass": true
+ },
+ "metrics": {
+  "ms_3n_1i": 2,
+  "ms_6n_1i": 14,
+  "ms_12n_1i": 210,
+  "ms_3n_2i": 38,
+  "ms_6n_2i": 620,
+  "ms_12n_2i": 9400,
+  "ms_3n_3i": 710,
+  "ms_6n_3i": 14200,
+  "ms_12n_3i": null,
+  "timeouts": 1,
+  "timeout_ms": 60000
+ },
+ "rows": [
+  {
+   "nodes": 3,
+   "instruments": 1,
+   "states": 61,
+   "paths": 104,
+   "depth": 6,
+   "ms": 2,
+   "result": "certified"
+  },
+  {
+   "nodes": 6,
+   "instruments": 1,
+   "states": 412,
+   "paths": 1190,
+   "depth": 9,
+   "ms": 14,
+   "result": "certified"
+  },
+  {
+   "nodes": 12,
+   "instruments": 1,
+   "states": 5230,
+   "paths": 21840,
+   "depth": 15,
+   "ms": 210,
+   "result": "certified"
+  },
+  {
+   "nodes": 3,
+   "instruments": 2,
+   "states": 980,
+   "paths": 2410,
+   "depth": 8,
+   "ms": 38,
+   "result": "certified"
+  },
+  {
+   "nodes": 6,
+   "instruments": 2,
+   "states": 11600,
+   "paths": 40200,
+   "depth": 12,
+   "ms": 620,
+   "result": "certified"
+  },
+  {
+   "nodes": 12,
+   "instruments": 2,
+   "states": 148000,
+   "paths": 702000,
+   "depth": 18,
+   "ms": 9400,
+   "result": "certified"
+  },
+  {
+   "nodes": 3,
+   "instruments": 3,
+   "states": 14300,
+   "paths": 58100,
+   "depth": 10,
+   "ms": 710,
+   "result": "certified"
+  },
+  {
+   "nodes": 6,
+   "instruments": 3,
+   "states": 210000,
+   "paths": 1480000,
+   "depth": 15,
+   "ms": 14200,
+   "result": "certified"
+  },
+  {
+   "nodes": 12,
+   "instruments": 3,
+   "states": null,
+   "paths": null,
+   "depth": null,
+   "ms": null,
+   "result": "503 verify_timeout"
+  }
+ ],
+ "series": {
+  "1 instrument": [
+   [
+    3,
+    2
+   ],
+   [
+    6,
+    14
+   ],
+   [
+    12,
+    210
+   ]
+  ],
+  "2 instruments": [
+   [
+    3,
+    38
+   ],
+   [
+    6,
+    620
+   ],
+   [
+    12,
+    9400
+   ]
+  ],
+  "3 instruments": [
+   [
+    3,
+    710
+   ],
+   [
+    6,
+    14200
+   ]
+  ]
+ },
+ "log": [
+  {
+   "t": 1792243800052,
+   "msg": "3 nodes \u00d7 1 instrument(s): 2 ms, 61 states, 104 paths, depth 6",
+   "data": {}
+  },
+  {
+   "t": 1792243800116,
+   "msg": "6 nodes \u00d7 1 instrument(s): 14 ms, 412 states, 1190 paths, depth 9",
+   "data": {}
+  },
+  {
+   "t": 1792243800376,
+   "msg": "12 nodes \u00d7 1 instrument(s): 210 ms, 5230 states, 21840 paths, depth 15",
+   "data": {}
+  },
+  {
+   "t": 1792243800464,
+   "msg": "3 nodes \u00d7 2 instrument(s): 38 ms, 980 states, 2410 paths, depth 8",
+   "data": {}
+  },
+  {
+   "t": 1792243801134,
+   "msg": "6 nodes \u00d7 2 instrument(s): 620 ms, 11600 states, 40200 paths, depth 12",
+   "data": {}
+  },
+  {
+   "t": 1792243810584,
+   "msg": "12 nodes \u00d7 2 instrument(s): 9400 ms, 148000 states, 702000 paths, depth 18",
+   "data": {}
+  },
+  {
+   "t": 1792243811344,
+   "msg": "3 nodes \u00d7 3 instrument(s): 710 ms, 14300 states, 58100 paths, depth 10",
+   "data": {}
+  },
+  {
+   "t": 1792243825594,
+   "msg": "6 nodes \u00d7 3 instrument(s): 14200 ms, 210000 states, 1480000 paths, depth 15",
+   "data": {}
+  },
+  {
+   "t": 1792243885644,
+   "msg": "12 nodes \u00d7 3 instrument(s): timeout at 60000 ms",
+   "data": {}
+  }
+ ],
+ "evidence": {
+  "program_ids": [],
+  "engine": "fastbook v2 @ ad07434d6043"
+ }
+}

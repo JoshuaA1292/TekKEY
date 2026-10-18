@@ -1,0 +1,268 @@
+{
+ "run_id": "r_01JA7LEAK000000000000001",
+ "test": "leak",
+ "model": "claude-opus-5-5",
+ "route": "none",
+ "venue": "real",
+ "started_t": 1792241700000,
+ "ended_t": 1792241709900,
+ "status": "passed",
+ "skipped_reason": null,
+ "headline": {
+  "label": "max damage",
+  "value": 3734,
+  "unit": "\u00a2",
+  "pass": true
+ },
+ "metrics": {
+  "attempts": 10,
+  "refused": 7,
+  "allowed": 3,
+  "max_damage_cents": 3734,
+  "certified_bound_cents": 3734,
+  "orders_sent": 0
+ },
+ "rows": [
+  {
+   "n": 1,
+   "method": "POST",
+   "path": "/order",
+   "key": "bk_ (stolen)",
+   "http": 404,
+   "code": "not found",
+   "note": "no order route exists"
+  },
+  {
+   "n": 2,
+   "method": "POST",
+   "path": "/program",
+   "key": "bk_ (stolen)",
+   "http": 403,
+   "code": "key_class",
+   "note": "a program key cannot author"
+  },
+  {
+   "n": 3,
+   "method": "PUT",
+   "path": "/envelope",
+   "key": "bk_ (stolen)",
+   "http": 403,
+   "code": "key_class",
+   "note": ""
+  },
+  {
+   "n": 4,
+   "method": "POST",
+   "path": "/program/1702/deploy",
+   "key": "bk_1701 (stolen)",
+   "http": 403,
+   "code": "key_bound_to_program",
+   "note": "key of 1701 on 1702"
+  },
+  {
+   "n": 5,
+   "method": "POST",
+   "path": "/program/1701/deploy",
+   "key": "bk_1701 (stolen)",
+   "http": 403,
+   "code": "key_spent",
+   "note": "already deployed"
+  },
+  {
+   "n": 6,
+   "method": "POST",
+   "path": "/program/1701/pause",
+   "key": "bk_1701 (stolen)",
+   "http": 200,
+   "code": "paused",
+   "note": "the key may pause: reduce-only nodes kept"
+  },
+  {
+   "n": 7,
+   "method": "POST",
+   "path": "/program/1701/cancel",
+   "key": "bk_1701 (stolen)",
+   "http": 200,
+   "code": "cancelling",
+   "note": "flattened at next print: loss \u2264 3734c"
+  },
+  {
+   "n": 8,
+   "method": "POST",
+   "path": "/program/1701/deploy",
+   "key": "bk_1701 (stolen)",
+   "http": 403,
+   "code": "key_spent",
+   "note": "after cancel"
+  },
+  {
+   "n": 9,
+   "method": "GET",
+   "path": "/program/1701/state",
+   "key": "bk_1701 (stolen)",
+   "http": 200,
+   "code": "halted",
+   "note": "the only call a spent key keeps"
+  },
+  {
+   "n": 10,
+   "method": "GET",
+   "path": "/account",
+   "key": "bk_1701 (stolen)",
+   "http": 403,
+   "code": "key_class",
+   "note": ""
+  }
+ ],
+ "series": {},
+ "log": [
+  {
+   "t": 1792241700900,
+   "msg": "POST /order with bk_ (stolen) \u2192 404 not found",
+   "data": {}
+  },
+  {
+   "t": 1792241701800,
+   "msg": "POST /program with bk_ (stolen) \u2192 403 key_class",
+   "data": {}
+  },
+  {
+   "t": 1792241702700,
+   "msg": "PUT /envelope with bk_ (stolen) \u2192 403 key_class",
+   "data": {}
+  },
+  {
+   "t": 1792241703600,
+   "msg": "POST /program/1702/deploy with bk_1701 (stolen) \u2192 403 key_bound_to_program",
+   "data": {}
+  },
+  {
+   "t": 1792241704500,
+   "msg": "POST /program/1701/deploy with bk_1701 (stolen) \u2192 403 key_spent",
+   "data": {}
+  },
+  {
+   "t": 1792241705400,
+   "msg": "POST /program/1701/pause with bk_1701 (stolen) \u2192 200 paused",
+   "data": {}
+  },
+  {
+   "t": 1792241706300,
+   "msg": "POST /program/1701/cancel with bk_1701 (stolen) \u2192 200 cancelling",
+   "data": {}
+  },
+  {
+   "t": 1792241707200,
+   "msg": "POST /program/1701/deploy with bk_1701 (stolen) \u2192 403 key_spent",
+   "data": {}
+  },
+  {
+   "t": 1792241708100,
+   "msg": "GET /program/1701/state with bk_1701 (stolen) \u2192 200 halted",
+   "data": {}
+  },
+  {
+   "t": 1792241709000,
+   "msg": "GET /account with bk_1701 (stolen) \u2192 403 key_class",
+   "data": {}
+  },
+  {
+   "t": 1792241709800,
+   "msg": "max damage with the stolen key: cancel at the worst moment = the certified bound, 3734c",
+   "data": {}
+  }
+ ],
+ "evidence": {
+  "program_ids": [
+   1701
+  ],
+  "certificates": {
+   "1701": {
+    "contract_version": 1,
+    "status": "certified",
+    "bound": {
+     "max_loss_cents": 3734,
+     "max_fees_cents": 136,
+     "max_exposure_lots": 1,
+     "halts_within_trades": 2
+    },
+    "assumes": {
+     "max_gap_ticks": 25,
+     "fill": "full_at_print",
+     "fee_bps": {
+      "maker": 1.0,
+      "taker": 3.5
+     },
+     "trigger_ref": "last",
+     "margin": "isolated_per_program"
+    },
+    "envelope_checked": {
+     "max_loss_cents": 4000,
+     "max_fees_cents": 500,
+     "max_trades": 60,
+     "max_exposure_lots": 2
+    },
+    "worst_path": [
+     {
+      "env": "print",
+      "at": 3010
+     },
+     {
+      "env": "gap",
+      "from": 3010,
+      "to": 2989
+     },
+     {
+      "event": "filled",
+      "node": "entry",
+      "qty": 1,
+      "price": 3000,
+      "fee_cents": 30
+     },
+     {
+      "env": "gap",
+      "from": 2989,
+      "to": 2964
+     },
+     {
+      "event": "triggered",
+      "node": "sl",
+      "print": 2964,
+      "limit": 2963
+     },
+     {
+      "event": "filled",
+      "node": "sl",
+      "qty": 1,
+      "price": 2964,
+      "fee_cents": 104
+     },
+     {
+      "event": "cancelled",
+      "node": "tp"
+     },
+     {
+      "event": "mark",
+      "position": 0,
+      "loss_cents": 3734
+     }
+    ],
+    "explored": {
+     "states": 61,
+     "paths": 104,
+     "depth": 6,
+     "ms": 2
+    },
+    "nodes": {
+     "total": 3,
+     "native": 3,
+     "relayed": 0
+    },
+    "locked_collateral_cents": 300000,
+    "engine": "fastbook v2 @ ad07434d6043",
+    "program_id": 1701,
+    "account": 5
+   }
+  }
+ }
+}

@@ -1,0 +1,26 @@
+# fly launch --copy-config --name bounded-key   (then: fly secrets set CHALK_ROUTER_API_KEY=... etc.)
+app = "bounded-key"
+primary_region = "bos"
+
+[build]
+  dockerfile = "deploy/Dockerfile"
+
+[env]
+  VENUE = "real"
+  PORT = "8080"
+  HOST = "0.0.0.0"
+  GATEWAY_DB = "/data/gateway.db"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  min_machines_running = 1
+
+[[mounts]]
+  source = "data"
+  destination = "/data"
+
+[[vm]]
+  size = "shared-cpu-2x"
+  memory = "1gb"

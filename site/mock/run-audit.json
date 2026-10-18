@@ -1,0 +1,4375 @@
+{
+ "run_id": "r_01JA7AUD1T000000000000001",
+ "test": "audit",
+ "model": "claude-opus-5-5",
+ "route": "none",
+ "venue": "real",
+ "started_t": 1792242131000,
+ "ended_t": 1792242133650,
+ "status": "passed",
+ "skipped_reason": null,
+ "headline": {
+  "label": "rejected",
+  "value": 253,
+  "unit": "/ 253",
+  "pass": true
+ },
+ "metrics": {
+  "orders": 253,
+  "rejected": 253,
+  "gap_path_found": 253,
+  "certified_with_allow_max_gap": 246,
+  "zero_allowance": 253,
+  "models": 5,
+  "median_gap_loss_cents": 65
+ },
+ "rows": [
+  {
+   "i": 1,
+   "model": "deepseek",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "102030.0",
+   "limit": "102030.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 102030.0, stop rests, mark 6459c",
+   "gap_loss_cents": 6459,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 2,
+   "model": "deepseek",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "939.75",
+   "limit": "939.75",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 939.75, stop rests, mark 64c",
+   "gap_loss_cents": 64,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 3,
+   "model": "deepseek",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3513.3",
+   "limit": "3513.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3513.3, stop rests, mark 6016c",
+   "gap_loss_cents": 6016,
+   "with_allow_25": "422 max_loss_cents"
+  },
+  {
+   "i": 4,
+   "model": "deepseek",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1023.6",
+   "limit": "1023.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1023.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 5,
+   "model": "deepseek",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "170.85",
+   "limit": "170.85",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 170.85, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 6,
+   "model": "deepseek",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3639.9",
+   "limit": "3639.9",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3639.9, stop rests, mark 6016c",
+   "gap_loss_cents": 6016,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 7,
+   "model": "deepseek",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3585.6",
+   "limit": "3585.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3585.6, stop rests, mark 6016c",
+   "gap_loss_cents": 6016,
+   "with_allow_25": "422 max_loss_cents"
+  },
+  {
+   "i": 8,
+   "model": "deepseek",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3618.3",
+   "limit": "3618.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3618.3, stop rests, mark 6016c",
+   "gap_loss_cents": 6016,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 9,
+   "model": "deepseek",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3822.4",
+   "limit": "3822.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3822.4, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 10,
+   "model": "deepseek",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1098.0",
+   "limit": "1098.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1098.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 11,
+   "model": "deepseek",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "176.71",
+   "limit": "176.71",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 176.71, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 12,
+   "model": "deepseek",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1086.3",
+   "limit": "1086.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1086.3, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 13,
+   "model": "deepseek",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3887.8",
+   "limit": "3887.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3887.8, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 14,
+   "model": "deepseek",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3682.1",
+   "limit": "3682.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3682.1, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 15,
+   "model": "deepseek",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1000.4",
+   "limit": "1000.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1000.4, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 16,
+   "model": "deepseek",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3714.9",
+   "limit": "3714.9",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3714.9, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 17,
+   "model": "deepseek",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1016.7",
+   "limit": "1016.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1016.7, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 18,
+   "model": "deepseek",
+   "coin": "XRP",
+   "side": "sell",
+   "trigger": "2.2241",
+   "limit": "2.2241",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 2.2241, stop rests, mark 1c",
+   "gap_loss_cents": 1,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 19,
+   "model": "deepseek",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "109020.0",
+   "limit": "109020.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 109020.0, stop rests, mark 6491c",
+   "gap_loss_cents": 6491,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 20,
+   "model": "deepseek",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1021.5",
+   "limit": "1021.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1021.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 21,
+   "model": "deepseek",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1043.3",
+   "limit": "1043.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1043.3, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 22,
+   "model": "gpt5",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3719.4",
+   "limit": "3719.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3719.4, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 23,
+   "model": "gpt5",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "113320.0",
+   "limit": "113320.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 113320.0, stop rests, mark 6510c",
+   "gap_loss_cents": 6510,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 24,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "173.7",
+   "limit": "173.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 173.7, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 25,
+   "model": "gpt5",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3819.1",
+   "limit": "3819.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3819.1, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 26,
+   "model": "gpt5",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1050.0",
+   "limit": "1050.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1050.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 27,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "178.85",
+   "limit": "178.85",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 178.85, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 28,
+   "model": "gpt5",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1109.0",
+   "limit": "1109.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1109.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 29,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "189.83",
+   "limit": "189.83",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 189.83, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 30,
+   "model": "gpt5",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3926.4",
+   "limit": "3926.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3926.4, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 31,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "192.42",
+   "limit": "192.42",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 192.42, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 32,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "180.42",
+   "limit": "180.42",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 180.42, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 33,
+   "model": "gpt5",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1099.6",
+   "limit": "1099.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1099.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 34,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "189.5",
+   "limit": "189.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 189.5, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 35,
+   "model": "gpt5",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3864.1",
+   "limit": "3864.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3864.1, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 36,
+   "model": "gpt5",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "112700.0",
+   "limit": "112700.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 112700.0, stop rests, mark 6507c",
+   "gap_loss_cents": 6507,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 37,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "190.39",
+   "limit": "190.39",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 190.39, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 38,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "191.09",
+   "limit": "191.09",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 191.09, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 39,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "196.75",
+   "limit": "196.75",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 196.75, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 40,
+   "model": "gpt5",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1121.0",
+   "limit": "1121.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1121.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 41,
+   "model": "gpt5",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1083.0",
+   "limit": "1083.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1083.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 42,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "195.88",
+   "limit": "195.88",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 195.88, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 43,
+   "model": "gpt5",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "112510.0",
+   "limit": "112510.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 112510.0, stop rests, mark 6506c",
+   "gap_loss_cents": 6506,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 44,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "184.47",
+   "limit": "184.47",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 184.47, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 45,
+   "model": "gpt5",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3856.2",
+   "limit": "3856.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3856.2, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 46,
+   "model": "gpt5",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "108090.0",
+   "limit": "108090.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 108090.0, stop rests, mark 6486c",
+   "gap_loss_cents": 6486,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 47,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "185.15",
+   "limit": "185.15",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 185.15, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 48,
+   "model": "gpt5",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3755.0",
+   "limit": "3755.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3755.0, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "422 max_loss_cents"
+  },
+  {
+   "i": 49,
+   "model": "gpt5",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "201.98",
+   "limit": "201.98",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 201.98, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 50,
+   "model": "gpt5",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "114310.0",
+   "limit": "114310.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 114310.0, stop rests, mark 6514c",
+   "gap_loss_cents": 6514,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 51,
+   "model": "gpt5",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4014.2",
+   "limit": "4014.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 4014.2, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 52,
+   "model": "gpt5",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106490.0",
+   "limit": "106490.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 106490.0, stop rests, mark 6479c",
+   "gap_loss_cents": 6479,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 53,
+   "model": "gpt5",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3843.1",
+   "limit": "3843.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3843.1, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "422 max_loss_cents"
+  },
+  {
+   "i": 54,
+   "model": "gpt5",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1131.7",
+   "limit": "1131.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1131.7, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 55,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1050.0",
+   "limit": "1050.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1050.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 56,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "113940.0",
+   "limit": "113940.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 113940.0, stop rests, mark 6513c",
+   "gap_loss_cents": 6513,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 57,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3722.7",
+   "limit": "3722.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3722.7, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 58,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "173.35",
+   "limit": "173.35",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 173.35, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 59,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4044.7",
+   "limit": "4044.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 4044.7, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 60,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "195.21",
+   "limit": "195.21",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 195.21, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 61,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1176.6",
+   "limit": "1176.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1176.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 62,
+   "model": "gemini",
+   "coin": "XRP",
+   "side": "sell",
+   "trigger": "2.4539",
+   "limit": "2.4539",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 2.4539, stop rests, mark 1c",
+   "gap_loss_cents": 1,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 63,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "108840.0",
+   "limit": "108840.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 108840.0, stop rests, mark 6490c",
+   "gap_loss_cents": 6490,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 64,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "112240.0",
+   "limit": "112240.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 112240.0, stop rests, mark 6505c",
+   "gap_loss_cents": 6505,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 65,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "111800.0",
+   "limit": "111800.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 111800.0, stop rests, mark 6503c",
+   "gap_loss_cents": 6503,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 66,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "194.18",
+   "limit": "194.18",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 194.18, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 67,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "110100.0",
+   "limit": "110100.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 110100.0, stop rests, mark 6495c",
+   "gap_loss_cents": 6495,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 68,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "104910.0",
+   "limit": "104910.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 104910.0, stop rests, mark 6472c",
+   "gap_loss_cents": 6472,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 69,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "116000.0",
+   "limit": "116000.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 116000.0, stop rests, mark 6522c",
+   "gap_loss_cents": 6522,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 70,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "186.15",
+   "limit": "186.15",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 186.15, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 71,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3742.6",
+   "limit": "3742.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3742.6, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 72,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4099.2",
+   "limit": "4099.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 4099.2, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 73,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1082.1",
+   "limit": "1082.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1082.1, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 74,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1137.5",
+   "limit": "1137.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1137.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 75,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "201.98",
+   "limit": "201.98",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 201.98, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 76,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "190.58",
+   "limit": "190.58",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 190.58, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 77,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "202.08",
+   "limit": "202.08",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 202.08, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 78,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1174.3",
+   "limit": "1174.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1174.3, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 79,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "191.51",
+   "limit": "191.51",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 191.51, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 80,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "205.05",
+   "limit": "205.05",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 205.05, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 81,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "191.88",
+   "limit": "191.88",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 191.88, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 82,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "200.44",
+   "limit": "200.44",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 200.44, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 83,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1129.0",
+   "limit": "1129.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1129.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 84,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1168.0",
+   "limit": "1168.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1168.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 85,
+   "model": "gemini",
+   "coin": "XRP",
+   "side": "sell",
+   "trigger": "2.5257",
+   "limit": "2.5257",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 2.5257, stop rests, mark 1c",
+   "gap_loss_cents": 1,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 86,
+   "model": "gemini",
+   "coin": "XRP",
+   "side": "buy",
+   "trigger": "2.6912",
+   "limit": "2.6912",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 2.6912, stop rests, mark 1c",
+   "gap_loss_cents": 1,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 87,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3920.0",
+   "limit": "3920.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3920.0, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 88,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1083.6",
+   "limit": "1083.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1083.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 89,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "192.59",
+   "limit": "192.59",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 192.59, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 90,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "113090.0",
+   "limit": "113090.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 113090.0, stop rests, mark 6509c",
+   "gap_loss_cents": 6509,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 91,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "112150.0",
+   "limit": "112150.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 112150.0, stop rests, mark 6505c",
+   "gap_loss_cents": 6505,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 92,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1178.7",
+   "limit": "1178.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1178.7, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 93,
+   "model": "gemini",
+   "coin": "DOGE",
+   "side": "buy",
+   "trigger": "0.2097",
+   "limit": "0.2097",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 0.2097, stop rests, mark 0c",
+   "gap_loss_cents": 0,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 94,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1089.1",
+   "limit": "1089.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1089.1, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 95,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "112930.0",
+   "limit": "112930.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 112930.0, stop rests, mark 6508c",
+   "gap_loss_cents": 6508,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 96,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1117.1",
+   "limit": "1117.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1117.1, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 97,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1092.4",
+   "limit": "1092.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1092.4, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 98,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107530.0",
+   "limit": "107530.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 107530.0, stop rests, mark 6484c",
+   "gap_loss_cents": 6484,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 99,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.78",
+   "limit": "183.78",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 183.78, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 100,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3889.2",
+   "limit": "3889.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3889.2, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 101,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1140.1",
+   "limit": "1140.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1140.1, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 102,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1160.9",
+   "limit": "1160.9",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1160.9, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 103,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1059.3",
+   "limit": "1059.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1059.3, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 104,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1169.2",
+   "limit": "1169.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1169.2, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 105,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1170.7",
+   "limit": "1170.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1170.7, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 106,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1157.2",
+   "limit": "1157.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1157.2, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 107,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1069.5",
+   "limit": "1069.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1069.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 108,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1123.4",
+   "limit": "1123.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1123.4, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 109,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1158.5",
+   "limit": "1158.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1158.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 110,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1057.7",
+   "limit": "1057.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1057.7, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 111,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1155.8",
+   "limit": "1155.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1155.8, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 112,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1132.5",
+   "limit": "1132.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1132.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 113,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4006.2",
+   "limit": "4006.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 4006.2, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 114,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.63",
+   "limit": "183.63",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 183.63, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 115,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1143.8",
+   "limit": "1143.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1143.8, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 116,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3805.2",
+   "limit": "3805.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3805.2, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 117,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1153.3",
+   "limit": "1153.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1153.3, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 118,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1042.3",
+   "limit": "1042.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1042.3, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 119,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107310.0",
+   "limit": "107310.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 107310.0, stop rests, mark 6483c",
+   "gap_loss_cents": 6483,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 120,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1059.8",
+   "limit": "1059.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1059.8, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 121,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4006.4",
+   "limit": "4006.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 4006.4, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 122,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3809.5",
+   "limit": "3809.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3809.5, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 123,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3809.7",
+   "limit": "3809.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3809.7, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 124,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3841.0",
+   "limit": "3841.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3841.0, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 125,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3988.5",
+   "limit": "3988.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3988.5, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "422 max_loss_cents"
+  },
+  {
+   "i": 126,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "195.39",
+   "limit": "195.39",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 195.39, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 127,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "111760.0",
+   "limit": "111760.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 111760.0, stop rests, mark 6503c",
+   "gap_loss_cents": 6503,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 128,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1168.5",
+   "limit": "1168.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1168.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 129,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1157.0",
+   "limit": "1157.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1157.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 130,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1061.9",
+   "limit": "1061.9",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1061.9, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 131,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1213.5",
+   "limit": "1213.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1213.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 132,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "195.18",
+   "limit": "195.18",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 195.18, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 133,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1062.0",
+   "limit": "1062.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1062.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 134,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1163.1",
+   "limit": "1163.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1163.1, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 135,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "110550.0",
+   "limit": "110550.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 110550.0, stop rests, mark 6497c",
+   "gap_loss_cents": 6497,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 136,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3991.8",
+   "limit": "3991.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3991.8, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 137,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "191.95",
+   "limit": "191.95",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 191.95, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 138,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "111110.0",
+   "limit": "111110.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 111110.0, stop rests, mark 6500c",
+   "gap_loss_cents": 6500,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 139,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "180.7",
+   "limit": "180.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 180.7, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 140,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107940.0",
+   "limit": "107940.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 107940.0, stop rests, mark 6486c",
+   "gap_loss_cents": 6486,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 141,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.66",
+   "limit": "183.66",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 183.66, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 142,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3821.2",
+   "limit": "3821.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3821.2, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 143,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "184.19",
+   "limit": "184.19",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 184.19, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 144,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3854.5",
+   "limit": "3854.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3854.5, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 145,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "114020.0",
+   "limit": "114020.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 114020.0, stop rests, mark 6513c",
+   "gap_loss_cents": 6513,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 146,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4093.8",
+   "limit": "4093.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 4093.8, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 147,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "198.89",
+   "limit": "198.89",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 198.89, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 148,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "199.13",
+   "limit": "199.13",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 199.13, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 149,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "110900.0",
+   "limit": "110900.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 110900.0, stop rests, mark 6499c",
+   "gap_loss_cents": 6499,
+   "with_allow_25": "422 max_loss_cents"
+  },
+  {
+   "i": 150,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3953.2",
+   "limit": "3953.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3953.2, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 151,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "185.96",
+   "limit": "185.96",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 185.96, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 152,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "108490.0",
+   "limit": "108490.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 108490.0, stop rests, mark 6488c",
+   "gap_loss_cents": 6488,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 153,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1142.0",
+   "limit": "1142.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1142.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 154,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3850.7",
+   "limit": "3850.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3850.7, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 155,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "198.69",
+   "limit": "198.69",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 198.69, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 156,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "108100.0",
+   "limit": "108100.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 108100.0, stop rests, mark 6486c",
+   "gap_loss_cents": 6486,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 157,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "110620.0",
+   "limit": "110620.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 110620.0, stop rests, mark 6498c",
+   "gap_loss_cents": 6498,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 158,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "104880.0",
+   "limit": "104880.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 104880.0, stop rests, mark 6472c",
+   "gap_loss_cents": 6472,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 159,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3788.3",
+   "limit": "3788.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3788.3, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 160,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3968.8",
+   "limit": "3968.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3968.8, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 161,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3965.0",
+   "limit": "3965.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3965.0, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 162,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "185.9",
+   "limit": "185.9",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 185.9, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 163,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.1",
+   "limit": "183.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 183.1, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 164,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3881.1",
+   "limit": "3881.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3881.1, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 165,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3897.7",
+   "limit": "3897.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3897.7, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 166,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1088.0",
+   "limit": "1088.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1088.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 167,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1167.8",
+   "limit": "1167.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1167.8, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 168,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1091.5",
+   "limit": "1091.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1091.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 169,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "186.34",
+   "limit": "186.34",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 186.34, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 170,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "179.72",
+   "limit": "179.72",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 179.72, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 171,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1141.6",
+   "limit": "1141.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1141.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 172,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3874.8",
+   "limit": "3874.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3874.8, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 173,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1066.4",
+   "limit": "1066.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1066.4, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 174,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1121.5",
+   "limit": "1121.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1121.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 175,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1079.8",
+   "limit": "1079.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1079.8, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 176,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1043.0",
+   "limit": "1043.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1043.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 177,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1122.2",
+   "limit": "1122.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1122.2, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 178,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "181.48",
+   "limit": "181.48",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 181.48, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 179,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3899.9",
+   "limit": "3899.9",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3899.9, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 180,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "105600.0",
+   "limit": "105600.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 105600.0, stop rests, mark 6475c",
+   "gap_loss_cents": 6475,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 181,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3923.1",
+   "limit": "3923.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3923.1, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 182,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1052.0",
+   "limit": "1052.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1052.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 183,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "105920.0",
+   "limit": "105920.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 105920.0, stop rests, mark 6477c",
+   "gap_loss_cents": 6477,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 184,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "179.0",
+   "limit": "179.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 179.0, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 185,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3902.5",
+   "limit": "3902.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3902.5, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "422 max_loss_cents"
+  },
+  {
+   "i": 186,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1099.6",
+   "limit": "1099.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1099.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 187,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1090.9",
+   "limit": "1090.9",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1090.9, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 188,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106310.0",
+   "limit": "106310.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 106310.0, stop rests, mark 6478c",
+   "gap_loss_cents": 6478,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 189,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "181.9",
+   "limit": "181.9",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 181.9, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 190,
+   "model": "gemini",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1182.6",
+   "limit": "1182.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1182.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 191,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "202.24",
+   "limit": "202.24",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 202.24, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 192,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4061.6",
+   "limit": "4061.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 4061.6, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 193,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "109340.0",
+   "limit": "109340.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 109340.0, stop rests, mark 6492c",
+   "gap_loss_cents": 6492,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 194,
+   "model": "gemini",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "109840.0",
+   "limit": "109840.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 109840.0, stop rests, mark 6494c",
+   "gap_loss_cents": 6494,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 195,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3968.0",
+   "limit": "3968.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3968.0, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 196,
+   "model": "gemini",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3883.0",
+   "limit": "3883.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3883.0, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 197,
+   "model": "gemini",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "178.31",
+   "limit": "178.31",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 178.31, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 198,
+   "model": "claude",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3510.8",
+   "limit": "3510.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3510.8, stop rests, mark 6016c",
+   "gap_loss_cents": 6016,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 199,
+   "model": "claude",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "182.1",
+   "limit": "182.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 182.1, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 200,
+   "model": "claude",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "180.84",
+   "limit": "180.84",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 180.84, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 201,
+   "model": "claude",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "105950.0",
+   "limit": "105950.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 105950.0, stop rests, mark 6477c",
+   "gap_loss_cents": 6477,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 202,
+   "model": "claude",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "187.62",
+   "limit": "187.62",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 187.62, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 203,
+   "model": "claude",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3814.4",
+   "limit": "3814.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3814.4, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 204,
+   "model": "claude",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3945.0",
+   "limit": "3945.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3945.0, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 205,
+   "model": "claude",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107680.0",
+   "limit": "107680.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 107680.0, stop rests, mark 6485c",
+   "gap_loss_cents": 6485,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 206,
+   "model": "claude",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3808.0",
+   "limit": "3808.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3808.0, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 207,
+   "model": "claude",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1047.6",
+   "limit": "1047.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1047.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 208,
+   "model": "claude",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "182.09",
+   "limit": "182.09",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 182.09, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 209,
+   "model": "claude",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3755.0",
+   "limit": "3755.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3755.0, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 210,
+   "model": "claude",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1040.6",
+   "limit": "1040.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1040.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 211,
+   "model": "claude",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3753.6",
+   "limit": "3753.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3753.6, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 212,
+   "model": "claude",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3851.3",
+   "limit": "3851.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3851.3, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 213,
+   "model": "claude",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "184.65",
+   "limit": "184.65",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 184.65, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 214,
+   "model": "claude",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3888.0",
+   "limit": "3888.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3888.0, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 215,
+   "model": "claude",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1082.5",
+   "limit": "1082.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1082.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 216,
+   "model": "claude",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106360.0",
+   "limit": "106360.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 106360.0, stop rests, mark 6479c",
+   "gap_loss_cents": 6479,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 217,
+   "model": "claude",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1050.5",
+   "limit": "1050.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1050.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 218,
+   "model": "claude",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1054.3",
+   "limit": "1054.3",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1054.3, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 219,
+   "model": "claude",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1048.0",
+   "limit": "1048.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1048.0, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 220,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "951.2",
+   "limit": "951.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 951.2, stop rests, mark 64c",
+   "gap_loss_cents": 64,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 221,
+   "model": "grok",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "155.11",
+   "limit": "155.11",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 155.11, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 222,
+   "model": "grok",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3501.2",
+   "limit": "3501.2",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3501.2, stop rests, mark 6016c",
+   "gap_loss_cents": 6016,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 223,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "916.1",
+   "limit": "916.1",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 916.1, stop rests, mark 64c",
+   "gap_loss_cents": 64,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 224,
+   "model": "grok",
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3933.6",
+   "limit": "3933.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3933.6, stop rests, mark 6018c",
+   "gap_loss_cents": 6018,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 225,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1065.5",
+   "limit": "1065.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1065.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 226,
+   "model": "grok",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "190.31",
+   "limit": "190.31",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 190.31, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 227,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1109.4",
+   "limit": "1109.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1109.4, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 228,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1130.5",
+   "limit": "1130.5",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1130.5, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 229,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1101.6",
+   "limit": "1101.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1101.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 230,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1052.6",
+   "limit": "1052.6",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1052.6, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 231,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "102650.0",
+   "limit": "102650.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 102650.0, stop rests, mark 6462c",
+   "gap_loss_cents": 6462,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 232,
+   "model": "grok",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3670.4",
+   "limit": "3670.4",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3670.4, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 233,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "104240.0",
+   "limit": "104240.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 104240.0, stop rests, mark 6469c",
+   "gap_loss_cents": 6469,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 234,
+   "model": "grok",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "181.57",
+   "limit": "181.57",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 181.57, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 235,
+   "model": "grok",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3679.0",
+   "limit": "3679.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3679.0, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 236,
+   "model": "grok",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.96",
+   "limit": "183.96",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 183.96, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 237,
+   "model": "grok",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3766.8",
+   "limit": "3766.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3766.8, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 238,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107180.0",
+   "limit": "107180.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 107180.0, stop rests, mark 6482c",
+   "gap_loss_cents": 6482,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 239,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107860.0",
+   "limit": "107860.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 107860.0, stop rests, mark 6485c",
+   "gap_loss_cents": 6485,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 240,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107110.0",
+   "limit": "107110.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 107110.0, stop rests, mark 6482c",
+   "gap_loss_cents": 6482,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 241,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1066.8",
+   "limit": "1066.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1066.8, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 242,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1046.7",
+   "limit": "1046.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1046.7, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 243,
+   "model": "grok",
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3815.8",
+   "limit": "3815.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 3815.8, stop rests, mark 6017c",
+   "gap_loss_cents": 6017,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 244,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1182.8",
+   "limit": "1182.8",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1182.8, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 245,
+   "model": "grok",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "198.79",
+   "limit": "198.79",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 198.79, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 246,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "113240.0",
+   "limit": "113240.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 113240.0, stop rests, mark 6510c",
+   "gap_loss_cents": 6510,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 247,
+   "model": "grok",
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "195.22",
+   "limit": "195.22",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 195.22, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 248,
+   "model": "grok",
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1045.9",
+   "limit": "1045.9",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 1045.9, stop rests, mark 65c",
+   "gap_loss_cents": 65,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 249,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "113230.0",
+   "limit": "113230.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 113230.0, stop rests, mark 6510c",
+   "gap_loss_cents": 6510,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 250,
+   "model": "grok",
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "173.7",
+   "limit": "173.7",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 173.7, stop rests, mark 61c",
+   "gap_loss_cents": 61,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 251,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106240.0",
+   "limit": "106240.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 106240.0, stop rests, mark 6478c",
+   "gap_loss_cents": 6478,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 252,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106700.0",
+   "limit": "106700.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 106700.0, stop rests, mark 6480c",
+   "gap_loss_cents": 6480,
+   "with_allow_25": "certified"
+  },
+  {
+   "i": 253,
+   "model": "grok",
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "105770.0",
+   "limit": "105770.0",
+   "allow_ticks": 0,
+   "policyc": "400 line 3: exit at without allow",
+   "gap_path": "gap 25 past 105770.0, stop rests, mark 6476c",
+   "gap_loss_cents": 6476,
+   "with_allow_25": "certified"
+  }
+ ],
+ "series": {
+  "gap_loss_cents": [
+   [
+    1,
+    6459
+   ],
+   [
+    2,
+    64
+   ],
+   [
+    3,
+    6016
+   ],
+   [
+    4,
+    65
+   ],
+   [
+    5,
+    61
+   ],
+   [
+    6,
+    6016
+   ],
+   [
+    7,
+    6016
+   ],
+   [
+    8,
+    6016
+   ],
+   [
+    9,
+    6017
+   ],
+   [
+    10,
+    65
+   ],
+   [
+    11,
+    61
+   ],
+   [
+    12,
+    65
+   ],
+   [
+    13,
+    6017
+   ],
+   [
+    14,
+    6017
+   ],
+   [
+    15,
+    65
+   ],
+   [
+    16,
+    6017
+   ],
+   [
+    17,
+    65
+   ],
+   [
+    18,
+    1
+   ],
+   [
+    19,
+    6491
+   ],
+   [
+    20,
+    65
+   ],
+   [
+    21,
+    65
+   ],
+   [
+    22,
+    6017
+   ],
+   [
+    23,
+    6510
+   ],
+   [
+    24,
+    61
+   ],
+   [
+    25,
+    6017
+   ],
+   [
+    26,
+    65
+   ],
+   [
+    27,
+    61
+   ],
+   [
+    28,
+    65
+   ],
+   [
+    29,
+    61
+   ],
+   [
+    30,
+    6018
+   ],
+   [
+    31,
+    61
+   ],
+   [
+    32,
+    61
+   ],
+   [
+    33,
+    65
+   ],
+   [
+    34,
+    61
+   ],
+   [
+    35,
+    6017
+   ],
+   [
+    36,
+    6507
+   ],
+   [
+    37,
+    61
+   ],
+   [
+    38,
+    61
+   ],
+   [
+    39,
+    61
+   ],
+   [
+    40,
+    65
+   ],
+   [
+    41,
+    65
+   ],
+   [
+    42,
+    61
+   ],
+   [
+    43,
+    6506
+   ],
+   [
+    44,
+    61
+   ],
+   [
+    45,
+    6017
+   ],
+   [
+    46,
+    6486
+   ],
+   [
+    47,
+    61
+   ],
+   [
+    48,
+    6017
+   ],
+   [
+    49,
+    61
+   ],
+   [
+    50,
+    6514
+   ],
+   [
+    51,
+    6018
+   ],
+   [
+    52,
+    6479
+   ],
+   [
+    53,
+    6017
+   ],
+   [
+    54,
+    65
+   ],
+   [
+    55,
+    65
+   ],
+   [
+    56,
+    6513
+   ],
+   [
+    57,
+    6017
+   ],
+   [
+    58,
+    61
+   ],
+   [
+    59,
+    6018
+   ],
+   [
+    60,
+    61
+   ],
+   [
+    61,
+    65
+   ],
+   [
+    62,
+    1
+   ],
+   [
+    63,
+    6490
+   ],
+   [
+    64,
+    6505
+   ],
+   [
+    65,
+    6503
+   ],
+   [
+    66,
+    61
+   ],
+   [
+    67,
+    6495
+   ],
+   [
+    68,
+    6472
+   ],
+   [
+    69,
+    6522
+   ],
+   [
+    70,
+    61
+   ],
+   [
+    71,
+    6017
+   ],
+   [
+    72,
+    6018
+   ],
+   [
+    73,
+    65
+   ],
+   [
+    74,
+    65
+   ],
+   [
+    75,
+    61
+   ],
+   [
+    76,
+    61
+   ],
+   [
+    77,
+    61
+   ],
+   [
+    78,
+    65
+   ],
+   [
+    79,
+    61
+   ],
+   [
+    80,
+    61
+   ],
+   [
+    81,
+    61
+   ],
+   [
+    82,
+    61
+   ],
+   [
+    83,
+    65
+   ],
+   [
+    84,
+    65
+   ],
+   [
+    85,
+    1
+   ],
+   [
+    86,
+    1
+   ],
+   [
+    87,
+    6018
+   ],
+   [
+    88,
+    65
+   ],
+   [
+    89,
+    61
+   ],
+   [
+    90,
+    6509
+   ],
+   [
+    91,
+    6505
+   ],
+   [
+    92,
+    65
+   ],
+   [
+    93,
+    0
+   ],
+   [
+    94,
+    65
+   ],
+   [
+    95,
+    6508
+   ],
+   [
+    96,
+    65
+   ],
+   [
+    97,
+    65
+   ],
+   [
+    98,
+    6484
+   ],
+   [
+    99,
+    61
+   ],
+   [
+    100,
+    6018
+   ],
+   [
+    101,
+    65
+   ],
+   [
+    102,
+    65
+   ],
+   [
+    103,
+    65
+   ],
+   [
+    104,
+    65
+   ],
+   [
+    105,
+    65
+   ],
+   [
+    106,
+    65
+   ],
+   [
+    107,
+    65
+   ],
+   [
+    108,
+    65
+   ],
+   [
+    109,
+    65
+   ],
+   [
+    110,
+    65
+   ],
+   [
+    111,
+    65
+   ],
+   [
+    112,
+    65
+   ],
+   [
+    113,
+    6018
+   ],
+   [
+    114,
+    61
+   ],
+   [
+    115,
+    65
+   ],
+   [
+    116,
+    6017
+   ],
+   [
+    117,
+    65
+   ],
+   [
+    118,
+    65
+   ],
+   [
+    119,
+    6483
+   ],
+   [
+    120,
+    65
+   ],
+   [
+    121,
+    6018
+   ],
+   [
+    122,
+    6017
+   ],
+   [
+    123,
+    6017
+   ],
+   [
+    124,
+    6017
+   ],
+   [
+    125,
+    6018
+   ],
+   [
+    126,
+    61
+   ],
+   [
+    127,
+    6503
+   ],
+   [
+    128,
+    65
+   ],
+   [
+    129,
+    65
+   ],
+   [
+    130,
+    65
+   ],
+   [
+    131,
+    65
+   ],
+   [
+    132,
+    61
+   ],
+   [
+    133,
+    65
+   ],
+   [
+    134,
+    65
+   ],
+   [
+    135,
+    6497
+   ],
+   [
+    136,
+    6018
+   ],
+   [
+    137,
+    61
+   ],
+   [
+    138,
+    6500
+   ],
+   [
+    139,
+    61
+   ],
+   [
+    140,
+    6486
+   ],
+   [
+    141,
+    61
+   ],
+   [
+    142,
+    6017
+   ],
+   [
+    143,
+    61
+   ],
+   [
+    144,
+    6017
+   ],
+   [
+    145,
+    6513
+   ],
+   [
+    146,
+    6018
+   ],
+   [
+    147,
+    61
+   ],
+   [
+    148,
+    61
+   ],
+   [
+    149,
+    6499
+   ],
+   [
+    150,
+    6018
+   ],
+   [
+    151,
+    61
+   ],
+   [
+    152,
+    6488
+   ],
+   [
+    153,
+    65
+   ],
+   [
+    154,
+    6017
+   ],
+   [
+    155,
+    61
+   ],
+   [
+    156,
+    6486
+   ],
+   [
+    157,
+    6498
+   ],
+   [
+    158,
+    6472
+   ],
+   [
+    159,
+    6017
+   ],
+   [
+    160,
+    6018
+   ],
+   [
+    161,
+    6018
+   ],
+   [
+    162,
+    61
+   ],
+   [
+    163,
+    61
+   ],
+   [
+    164,
+    6017
+   ],
+   [
+    165,
+    6018
+   ],
+   [
+    166,
+    65
+   ],
+   [
+    167,
+    65
+   ],
+   [
+    168,
+    65
+   ],
+   [
+    169,
+    61
+   ],
+   [
+    170,
+    61
+   ],
+   [
+    171,
+    65
+   ],
+   [
+    172,
+    6017
+   ],
+   [
+    173,
+    65
+   ],
+   [
+    174,
+    65
+   ],
+   [
+    175,
+    65
+   ],
+   [
+    176,
+    65
+   ],
+   [
+    177,
+    65
+   ],
+   [
+    178,
+    61
+   ],
+   [
+    179,
+    6018
+   ],
+   [
+    180,
+    6475
+   ],
+   [
+    181,
+    6018
+   ],
+   [
+    182,
+    65
+   ],
+   [
+    183,
+    6477
+   ],
+   [
+    184,
+    61
+   ],
+   [
+    185,
+    6018
+   ],
+   [
+    186,
+    65
+   ],
+   [
+    187,
+    65
+   ],
+   [
+    188,
+    6478
+   ],
+   [
+    189,
+    61
+   ],
+   [
+    190,
+    65
+   ],
+   [
+    191,
+    61
+   ],
+   [
+    192,
+    6018
+   ],
+   [
+    193,
+    6492
+   ],
+   [
+    194,
+    6494
+   ],
+   [
+    195,
+    6018
+   ],
+   [
+    196,
+    6017
+   ],
+   [
+    197,
+    61
+   ],
+   [
+    198,
+    6016
+   ],
+   [
+    199,
+    61
+   ],
+   [
+    200,
+    61
+   ],
+   [
+    201,
+    6477
+   ],
+   [
+    202,
+    61
+   ],
+   [
+    203,
+    6017
+   ],
+   [
+    204,
+    6018
+   ],
+   [
+    205,
+    6485
+   ],
+   [
+    206,
+    6017
+   ],
+   [
+    207,
+    65
+   ],
+   [
+    208,
+    61
+   ],
+   [
+    209,
+    6017
+   ],
+   [
+    210,
+    65
+   ],
+   [
+    211,
+    6017
+   ],
+   [
+    212,
+    6017
+   ],
+   [
+    213,
+    61
+   ],
+   [
+    214,
+    6017
+   ],
+   [
+    215,
+    65
+   ],
+   [
+    216,
+    6479
+   ],
+   [
+    217,
+    65
+   ],
+   [
+    218,
+    65
+   ],
+   [
+    219,
+    65
+   ],
+   [
+    220,
+    64
+   ],
+   [
+    221,
+    61
+   ],
+   [
+    222,
+    6016
+   ],
+   [
+    223,
+    64
+   ],
+   [
+    224,
+    6018
+   ],
+   [
+    225,
+    65
+   ],
+   [
+    226,
+    61
+   ],
+   [
+    227,
+    65
+   ],
+   [
+    228,
+    65
+   ],
+   [
+    229,
+    65
+   ],
+   [
+    230,
+    65
+   ],
+   [
+    231,
+    6462
+   ],
+   [
+    232,
+    6017
+   ],
+   [
+    233,
+    6469
+   ],
+   [
+    234,
+    61
+   ],
+   [
+    235,
+    6017
+   ],
+   [
+    236,
+    61
+   ],
+   [
+    237,
+    6017
+   ],
+   [
+    238,
+    6482
+   ],
+   [
+    239,
+    6485
+   ],
+   [
+    240,
+    6482
+   ],
+   [
+    241,
+    65
+   ],
+   [
+    242,
+    65
+   ],
+   [
+    243,
+    6017
+   ],
+   [
+    244,
+    65
+   ],
+   [
+    245,
+    61
+   ],
+   [
+    246,
+    6510
+   ],
+   [
+    247,
+    61
+   ],
+   [
+    248,
+    65
+   ],
+   [
+    249,
+    6510
+   ],
+   [
+    250,
+    61
+   ],
+   [
+    251,
+    6478
+   ],
+   [
+    252,
+    6480
+   ],
+   [
+    253,
+    6476
+   ]
+  ]
+ },
+ "log": [
+  {
+   "t": 1792242131000,
+   "msg": "253 stop-limit orders from fixtures/audit_stoplimits.json (Alpha Arena season 1, Hyperliquid)",
+   "data": {}
+  },
+  {
+   "t": 1792242131040,
+   "msg": "policyc on each: `exit ... at` without `allow` is a static error",
+   "data": {}
+  },
+  {
+   "t": 1792242131200,
+   "msg": "order 206132736980 (deepseek, BTC sell @ 102030.0): 400 line 3; --unsafe-allow-zero verify: 422 gap path, loss 6459c; allow 25: 200",
+   "data": {}
+  },
+  {
+   "t": 1792242131353,
+   "msg": "order 204651434120 (deepseek, XRP sell @ 2.2241): 400 line 3; --unsafe-allow-zero verify: 422 gap path, loss 1c; allow 25: 200",
+   "data": {}
+  },
+  {
+   "t": 1792242132208,
+   "msg": "order 211504657043 (gemini, ETH buy @ 4006.2): 400 line 3; --unsafe-allow-zero verify: 422 gap path, loss 6018c; allow 25: 200",
+   "data": {}
+  },
+  {
+   "t": 1792242133468,
+   "msg": "order 204601782276 (grok, BTC sell @ 105770.0): 400 line 3; --unsafe-allow-zero verify: 422 gap path, loss 6476c; allow 25: 200",
+   "data": {}
+  },
+  {
+   "t": 1792242133600,
+   "msg": "rejected 253/253 \u00b7 gap path 253/253 \u00b7 certified with allow = max_gap 246/253",
+   "data": {}
+  }
+ ],
+ "evidence": {
+  "program_ids": [],
+  "fixture": "fixtures/audit_stoplimits.json",
+  "source": "audit/data (Alpha Arena season 1, Hyperliquid public API)"
+ }
+}

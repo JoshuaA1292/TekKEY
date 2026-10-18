@@ -1,0 +1,689 @@
+{
+ "run_id": "r_01JA7TAPE000000000000001",
+ "test": "tape",
+ "model": "claude-opus-5-5",
+ "route": "none",
+ "venue": "real",
+ "started_t": 1792242600000,
+ "ended_t": 1792242661500,
+ "status": "passed",
+ "skipped_reason": null,
+ "headline": {
+  "label": "breaches",
+  "value": 0,
+  "unit": "/ 5",
+  "pass": true
+ },
+ "metrics": {
+  "prints": 60,
+  "programs": 5,
+  "breaches": 0,
+  "assumption_violations": 1,
+  "max_gap_seen": 31,
+  "max_gap_ticks": 25,
+  "certificates_exposed": 1,
+  "source": "coinbase",
+  "cached": false
+ },
+ "rows": [
+  {
+   "program_id": 1540,
+   "program": "buy 1 at 3000, sl -12 allow 25",
+   "bound_cents": 3734,
+   "realized_cents": 3734,
+   "halted": true,
+   "exposed_to_violation": true,
+   "breach": false,
+   "replay_matches_verifier": true
+  },
+  {
+   "program_id": 1541,
+   "program": "sell 1 at 3021, sl +18 allow 25",
+   "bound_cents": 2960,
+   "realized_cents": 0,
+   "halted": false,
+   "exposed_to_violation": false,
+   "breach": false,
+   "replay_matches_verifier": true
+  },
+  {
+   "program_id": 1542,
+   "program": "buy 1 at 2995, sl -14 allow 25",
+   "bound_cents": 3939,
+   "realized_cents": 2812,
+   "halted": true,
+   "exposed_to_violation": false,
+   "breach": false,
+   "replay_matches_verifier": true
+  },
+  {
+   "program_id": 1543,
+   "program": "buy 1 at 3005, sl -6 allow 12",
+   "bound_cents": 1870,
+   "realized_cents": 1870,
+   "halted": true,
+   "exposed_to_violation": false,
+   "breach": false,
+   "replay_matches_verifier": true
+  },
+  {
+   "program_id": 1544,
+   "program": "sell 1 at 3016, sl +9 allow 15",
+   "bound_cents": 2536,
+   "realized_cents": 0,
+   "halted": false,
+   "exposed_to_violation": false,
+   "breach": false,
+   "replay_matches_verifier": true
+  }
+ ],
+ "series": {
+  "price": [
+   [
+    0,
+    3010
+   ],
+   [
+    1,
+    3008
+   ],
+   [
+    2,
+    3009
+   ],
+   [
+    3,
+    3008
+   ],
+   [
+    4,
+    3007
+   ],
+   [
+    5,
+    3008
+   ],
+   [
+    6,
+    3010
+   ],
+   [
+    7,
+    3012
+   ],
+   [
+    8,
+    3014
+   ],
+   [
+    9,
+    3016
+   ],
+   [
+    10,
+    3018
+   ],
+   [
+    11,
+    3018
+   ],
+   [
+    12,
+    3017
+   ],
+   [
+    13,
+    3018
+   ],
+   [
+    14,
+    3020
+   ],
+   [
+    15,
+    3021
+   ],
+   [
+    16,
+    3023
+   ],
+   [
+    17,
+    3022
+   ],
+   [
+    18,
+    3021
+   ],
+   [
+    19,
+    3020
+   ],
+   [
+    20,
+    3019
+   ],
+   [
+    21,
+    3019
+   ],
+   [
+    22,
+    3019
+   ],
+   [
+    23,
+    3020
+   ],
+   [
+    24,
+    3019
+   ],
+   [
+    25,
+    3017
+   ],
+   [
+    26,
+    3017
+   ],
+   [
+    27,
+    3016
+   ],
+   [
+    28,
+    3014
+   ],
+   [
+    29,
+    3016
+   ],
+   [
+    30,
+    3015
+   ],
+   [
+    31,
+    3015
+   ],
+   [
+    32,
+    3015
+   ],
+   [
+    33,
+    3016
+   ],
+   [
+    34,
+    3018
+   ],
+   [
+    35,
+    3018
+   ],
+   [
+    36,
+    3019
+   ],
+   [
+    37,
+    2988
+   ],
+   [
+    38,
+    2989
+   ],
+   [
+    39,
+    2988
+   ],
+   [
+    40,
+    2988
+   ],
+   [
+    41,
+    2988
+   ],
+   [
+    42,
+    2988
+   ],
+   [
+    43,
+    2988
+   ],
+   [
+    44,
+    2989
+   ],
+   [
+    45,
+    2989
+   ],
+   [
+    46,
+    2990
+   ],
+   [
+    47,
+    2990
+   ],
+   [
+    48,
+    2990
+   ],
+   [
+    49,
+    2989
+   ],
+   [
+    50,
+    2988
+   ],
+   [
+    51,
+    2987
+   ],
+   [
+    52,
+    2987
+   ],
+   [
+    53,
+    2988
+   ],
+   [
+    54,
+    2989
+   ],
+   [
+    55,
+    2987
+   ],
+   [
+    56,
+    2987
+   ],
+   [
+    57,
+    2987
+   ],
+   [
+    58,
+    2987
+   ],
+   [
+    59,
+    2986
+   ]
+  ],
+  "gap_ticks": [
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    6,
+    2
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    8,
+    2
+   ],
+   [
+    9,
+    2
+   ],
+   [
+    10,
+    2
+   ],
+   [
+    11,
+    0
+   ],
+   [
+    12,
+    1
+   ],
+   [
+    13,
+    1
+   ],
+   [
+    14,
+    2
+   ],
+   [
+    15,
+    1
+   ],
+   [
+    16,
+    2
+   ],
+   [
+    17,
+    1
+   ],
+   [
+    18,
+    1
+   ],
+   [
+    19,
+    1
+   ],
+   [
+    20,
+    1
+   ],
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    23,
+    1
+   ],
+   [
+    24,
+    1
+   ],
+   [
+    25,
+    2
+   ],
+   [
+    26,
+    0
+   ],
+   [
+    27,
+    1
+   ],
+   [
+    28,
+    2
+   ],
+   [
+    29,
+    2
+   ],
+   [
+    30,
+    1
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    1
+   ],
+   [
+    34,
+    2
+   ],
+   [
+    35,
+    0
+   ],
+   [
+    36,
+    1
+   ],
+   [
+    37,
+    31
+   ],
+   [
+    38,
+    1
+   ],
+   [
+    39,
+    1
+   ],
+   [
+    40,
+    0
+   ],
+   [
+    41,
+    0
+   ],
+   [
+    42,
+    0
+   ],
+   [
+    43,
+    0
+   ],
+   [
+    44,
+    1
+   ],
+   [
+    45,
+    0
+   ],
+   [
+    46,
+    1
+   ],
+   [
+    47,
+    0
+   ],
+   [
+    48,
+    0
+   ],
+   [
+    49,
+    1
+   ],
+   [
+    50,
+    1
+   ],
+   [
+    51,
+    1
+   ],
+   [
+    52,
+    0
+   ],
+   [
+    53,
+    1
+   ],
+   [
+    54,
+    1
+   ],
+   [
+    55,
+    2
+   ],
+   [
+    56,
+    0
+   ],
+   [
+    57,
+    0
+   ],
+   [
+    58,
+    0
+   ],
+   [
+    59,
+    1
+   ]
+  ]
+ },
+ "log": [
+  {
+   "t": 1792242600000,
+   "msg": "replay --attach: 60 Coinbase prints onto the live book; 5 certified programs live from mark 3010",
+   "data": {}
+  },
+  {
+   "t": 1792242637000,
+   "msg": "print 37: gap 3019\u21922988 = 31 ticks > max_gap 25: assumption violation; program 1540 exposed",
+   "data": {}
+  },
+  {
+   "t": 1792242637100,
+   "msg": "program 1540: stop filled at 2964 anyway (limit 2963 \u2264 print); realized 3734c \u2264 bound 3734c; no breach",
+   "data": {}
+  },
+  {
+   "t": 1792242661000,
+   "msg": "breaches 0/5 \u00b7 assumption violations 1 \u00b7 exposed certificates 1 (held)",
+   "data": {}
+  }
+ ],
+ "evidence": {
+  "program_ids": [
+   1540,
+   1541,
+   1542,
+   1543,
+   1544
+  ],
+  "tape": {
+   "from": 1792241160,
+   "to": 1792244760,
+   "instrument": "ETH-USD"
+  },
+  "certificates": {
+   "1540": {
+    "contract_version": 1,
+    "status": "certified",
+    "bound": {
+     "max_loss_cents": 3734,
+     "max_fees_cents": 136,
+     "max_exposure_lots": 1,
+     "halts_within_trades": 2
+    },
+    "assumes": {
+     "max_gap_ticks": 25,
+     "fill": "full_at_print",
+     "fee_bps": {
+      "maker": 1.0,
+      "taker": 3.5
+     },
+     "trigger_ref": "last",
+     "margin": "isolated_per_program"
+    },
+    "envelope_checked": {
+     "max_loss_cents": 4000,
+     "max_fees_cents": 500,
+     "max_trades": 60,
+     "max_exposure_lots": 2
+    },
+    "worst_path": [
+     {
+      "env": "print",
+      "at": 3010
+     },
+     {
+      "env": "gap",
+      "from": 3010,
+      "to": 2989
+     },
+     {
+      "event": "filled",
+      "node": "entry",
+      "qty": 1,
+      "price": 3000,
+      "fee_cents": 30
+     },
+     {
+      "env": "gap",
+      "from": 2989,
+      "to": 2964
+     },
+     {
+      "event": "triggered",
+      "node": "sl",
+      "print": 2964,
+      "limit": 2963
+     },
+     {
+      "event": "filled",
+      "node": "sl",
+      "qty": 1,
+      "price": 2964,
+      "fee_cents": 104
+     },
+     {
+      "event": "cancelled",
+      "node": "tp"
+     },
+     {
+      "event": "mark",
+      "position": 0,
+      "loss_cents": 3734
+     }
+    ],
+    "explored": {
+     "states": 61,
+     "paths": 104,
+     "depth": 6,
+     "ms": 2
+    },
+    "nodes": {
+     "total": 3,
+     "native": 3,
+     "relayed": 0
+    },
+    "locked_collateral_cents": 300000,
+    "engine": "fastbook v2 @ ad07434d6043",
+    "program_id": 1540,
+    "account": 4
+   }
+  },
+  "replay": {
+   "matches_verifier": true
+  }
+ }
+}

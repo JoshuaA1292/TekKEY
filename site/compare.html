@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Race Results Compared</title>
+<meta name="description" content="Ordinary API key vs bounded API key, same model and same tape, across the live race and replayed days of history.">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="race.css">
+<style>
+.cmp table { font-size: 13px; }
+.cmp th:first-child, .cmp td:first-child { position: sticky; left: 0; background: var(--surface); }
+.cmp td.n { font-family: var(--mono); }
+.cmp .raw-ink, .cmp .bnd-ink { font-weight: 500; }
+.cmp .pos { color: var(--good-ink); } .cmp .neg { color: var(--bad-ink); }
+.cmp .flag { font-size: 11px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--fg-3); margin-left: 6px; white-space: nowrap; }
+.cmp .flag.clean { border-color: var(--good); color: var(--good-ink); }
+.cmp .flag.dirty { border-color: var(--warn); color: var(--warn); }
+.cmp .flag.live { border-color: var(--accent); color: var(--accent); }
+.cmp .lane-h { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 28px; }
+.cmp .scen { padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.cmp .scen h3 { font-size: 15px; margin-bottom: 6px; }
+.cmp .scen .sub { font-size: 13px; color: var(--fg-2); margin: 0; }
+.cmp .grid3 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+.cmp .kpi.crash { border-left: 3px solid var(--raw); }
+.cmp .kpi .v { overflow-wrap: anywhere; }
+.cmp .kpi .v.two { font-size: 18px; }
+.cmp .kpi a { color: var(--accent); }
+.cmp tr.crash td:first-child { box-shadow: inset 3px 0 0 var(--raw); }
+.cmp td.model { font-family: var(--mono); font-size: 12px; }
+.cmp td.model .via { display: block; color: var(--fg-3); font-size: 11px; }
+.cmp .kpi { padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); }
+.cmp .kpi .k { font-size: 12px; color: var(--fg-3); }
+.cmp .kpi .v { font-family: var(--mono); font-size: 22px; margin-top: 4px; }
+@media (max-width: 1100px) { .cmp .grid3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) { .cmp .lane-h { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .cmp .grid3 { grid-template-columns: 1fr; } .eyebrow { flex-wrap: wrap; } .eyebrow .right { margin-left: 0; flex-basis: 100%; } }
+</style>
+</head>
+<body>
+<header class="top race-top">
+  <div class="wrap">
+    <div class="eyebrow"><span class="mono">results</span><span class="right"><a href="race.html" class="faint">live race</a> · <a href="race.html?mode=backtest" class="faint">backtest</a> · <a href="race.html?mode=backtest#replay" class="faint">replay the crash</a> · <a href="/" class="faint">the lab</a></span></div>
+    <h1 class="thesis">Three scenarios, two keys, the same model in both lanes.</h1>
+    <p class="sub">In each run one model, with the same brief and the same attack messages, trades two accounts on the same exchange: an ordinary API key that can send any order, and a bounded key that can only deploy what the venue has proved. On a live day, on the most volatile day of the month, and on a flash crash. Grok runs go through the Chalk Model Gateway; Claude runs go to the Anthropic API directly.</p>
+  </div>
+</header>
+<main class="wrap cmp">
+  <section>
+    <div class="sec-head"><h2>The headline numbers</h2><span class="label" id="note"></span></div>
+    <div class="grid3" id="kpis"></div>
+  </section>
+  <section>
+    <div class="sec-head"><h2>Every run</h2><span class="label">read back from the exchange and the gateway</span></div>
+    <div class="tablewrap"><table id="tbl"></table></div>
+    <p class="small muted" style="margin-top:12px">Clean means every round got a model decision. A run marked incomplete had rounds where the model call failed (network), so both agents simply held those rounds. Certificate breaches counts programs whose realized loss exceeded their certified bound; it must be 0. Assumption violations are prints that moved more than the envelope's gap between consecutive prints: the proof does not cover those moments, and they are counted, not hidden.</p>
+  </section>
+  <section>
+    <div class="sec-head"><h2>How to read it</h2></div>
+    <div class="lane-h">
+      <div class="scen"><h3 class="raw-ink">Ordinary API key</h3><p class="sub">Its P&amp;L is whatever the model did. Its worst case is not a number anyone knew in advance: it is the owner's rules monitor (lots, stop, daily loss) counting breaches after the fact, and liquidation at the capital.</p></div>
+      <div class="scen"><h3 class="bnd-ink">Bounded API key</h3><p class="sub">Every program carried a certified maximum loss before its first order rested. The column that matters is certificate breaches: realized loss above the certificate. Everything else is the model's trading, same as the other lane.</p></div>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><span>Sources:</span><a href="/race/compare">/race/compare</a><a href="/backtest/compare">/backtest/compare</a></footer>
+<script src="compare.js"></script>
+</body>
+</html>

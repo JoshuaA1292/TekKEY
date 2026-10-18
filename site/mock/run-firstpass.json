@@ -1,0 +1,1350 @@
+{
+ "run_id": "r_01JA7F1RSTPASS00000000001",
+ "test": "firstpass",
+ "model": "claude-opus-5-5",
+ "route": "chalk",
+ "venue": "real",
+ "started_t": 1792236004000,
+ "ended_t": 1792236384343,
+ "status": "passed",
+ "skipped_reason": null,
+ "headline": {
+  "label": "first pass",
+  "value": 84.0,
+  "unit": "%",
+  "pass": true
+ },
+ "metrics": {
+  "first_pass_rate": 0.84,
+  "n_briefs": 50,
+  "n_first_pass": 42,
+  "n_certified_final": 47,
+  "droid_rounds_mean": 0.38,
+  "droid_rounds_median": 0,
+  "bound_tightness_mean": 0.8263,
+  "bound_tightness_min": 0.317,
+  "bound_tightness_max": 1.0
+ },
+ "rows": [
+  {
+   "brief": "brief-001",
+   "tags": "short,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1201,
+   "bound_cents": 2637,
+   "envelope_cents": 4000,
+   "tightness": 0.659,
+   "elapsed_s": 4.1,
+   "source": "instrument ETH\nentry sell 1 at 3035\nsl: exit all at entry + 10 allow 15 when price >= entry + 10   oco tp\ntp: take all at entry - 66   oco sl\n"
+  },
+  {
+   "brief": "brief-002",
+   "tags": "short,qty1,uncertifiable:rearm_over_trades",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1202,
+   "bound_cents": 3736,
+   "envelope_cents": 5000,
+   "tightness": 0.747,
+   "elapsed_s": 9.8,
+   "source": "instrument ETH\nentry sell 1 at 3021\nsl: exit all at entry + 11 allow 25 when price >= entry + 11   oco tp\ntp: take all at entry - 23   oco sl\n"
+  },
+  {
+   "brief": "brief-003",
+   "tags": "long,qty1,uncertifiable:rearm_over_trades",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1203,
+   "bound_cents": 3234,
+   "envelope_cents": 6000,
+   "tightness": 0.539,
+   "elapsed_s": 6.6,
+   "source": "instrument ETH\nentry buy 1 at 2995\nsl: exit all at entry - 6 allow 25 when price <= entry - 6   oco tp\ntp: take all at entry + 65   oco sl\n"
+  },
+  {
+   "brief": "brief-004",
+   "tags": "short,qty2,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1204,
+   "bound_cents": 4937,
+   "envelope_cents": 5000,
+   "tightness": 0.987,
+   "elapsed_s": 7.8,
+   "source": "instrument ETH\nentry sell 2 at 3035\nsl: exit all at entry + 9 allow 15 when price >= entry + 9   oco tp\ntp: take all at entry - 70   oco sl\n"
+  },
+  {
+   "brief": "brief-005",
+   "tags": "long,qty2,uncertifiable:no_stop",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1205,
+   "bound_cents": 6000,
+   "envelope_cents": 6000,
+   "tightness": 1.0,
+   "elapsed_s": 9.5,
+   "source": "instrument ETH\nentry buy 2 at 3006\nsl: exit all at entry - 12 allow 30 when price <= entry - 12   oco tp\ntp: take all at entry + 62   oco sl\n"
+  },
+  {
+   "brief": "brief-006",
+   "tags": "long,qty2,uncertifiable:scale_in_over_exposure",
+   "first_http": 422,
+   "first_status": "rejected",
+   "droid_rounds": 3,
+   "final": "rejected",
+   "program_id": null,
+   "bound_cents": null,
+   "envelope_cents": 6000,
+   "tightness": null,
+   "elapsed_s": 4.2,
+   "source": "instrument ETH\nentry buy 2 at 2999\nsl: exit all at entry - 12 allow 15 when price <= entry - 12   oco tp\ntp: take all at entry + 57   oco sl\n"
+  },
+  {
+   "brief": "brief-007",
+   "tags": "short,qty2,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1207,
+   "bound_cents": 6736,
+   "envelope_cents": 7000,
+   "tightness": 0.962,
+   "elapsed_s": 3.4,
+   "source": "instrument ETH\nentry sell 2 at 3032\nsl: exit all at entry + 8 allow 25 when price >= entry + 8   oco tp\ntp: take all at entry - 30   oco sl\n"
+  },
+  {
+   "brief": "brief-008",
+   "tags": "long,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1208,
+   "bound_cents": 3000,
+   "envelope_cents": 3000,
+   "tightness": 1.0,
+   "elapsed_s": 3.1,
+   "source": "instrument ETH\nentry buy 1 at 3007\nsl: exit all at entry - 19 allow 10 when price <= entry - 19   oco tp\ntp: take all at entry + 27   oco sl\n"
+  },
+  {
+   "brief": "brief-009",
+   "tags": "short,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1209,
+   "bound_cents": 4136,
+   "envelope_cents": 6000,
+   "tightness": 0.689,
+   "elapsed_s": 4.0,
+   "source": "instrument ETH\nentry sell 1 at 3013\nsl: exit all at entry + 30 allow 10 when price >= entry + 30   oco tp\ntp: take all at entry - 21   oco sl\n"
+  },
+  {
+   "brief": "brief-010",
+   "tags": "long,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1210,
+   "bound_cents": 5535,
+   "envelope_cents": 6000,
+   "tightness": 0.922,
+   "elapsed_s": 6.3,
+   "source": "instrument ETH\nentry buy 1 at 3006\nsl: exit all at entry - 24 allow 30 when price <= entry - 24   oco tp\ntp: take all at entry + 32   oco sl\n"
+  },
+  {
+   "brief": "brief-011",
+   "tags": "long,qty2,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1211,
+   "bound_cents": 7534,
+   "envelope_cents": 8000,
+   "tightness": 0.942,
+   "elapsed_s": 7.1,
+   "source": "instrument ETH\nentry buy 2 at 2994\nsl: exit all at entry - 22 allow 15 when price <= entry - 22   oco tp\ntp: take all at entry + 63   oco sl\n"
+  },
+  {
+   "brief": "brief-012",
+   "tags": "long,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1212,
+   "bound_cents": 3935,
+   "envelope_cents": 4000,
+   "tightness": 0.984,
+   "elapsed_s": 3.8,
+   "source": "instrument ETH\nentry buy 1 at 3008\nsl: exit all at entry - 23 allow 15 when price <= entry - 23   oco tp\ntp: take all at entry + 18   oco sl\n"
+  },
+  {
+   "brief": "brief-013",
+   "tags": "long,qty2,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1213,
+   "bound_cents": 7535,
+   "envelope_cents": 8000,
+   "tightness": 0.942,
+   "elapsed_s": 8.6,
+   "source": "instrument ETH\nentry buy 2 at 3003\nsl: exit all at entry - 17 allow 20 when price <= entry - 17   oco tp\ntp: take all at entry + 60   oco sl\n"
+  },
+  {
+   "brief": "brief-014",
+   "tags": "short,qty1,uncertifiable:no_stop",
+   "first_http": 422,
+   "first_status": "rejected",
+   "droid_rounds": 3,
+   "final": "rejected",
+   "program_id": null,
+   "bound_cents": null,
+   "envelope_cents": 5000,
+   "tightness": null,
+   "elapsed_s": 7.9,
+   "source": "instrument ETH\nentry sell 1 at 3016\nsl: exit all at entry + 12 allow 20 when price >= entry + 12   oco tp\ntp: take all at entry - 73   oco sl\n"
+  },
+  {
+   "brief": "brief-015",
+   "tags": "long,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1215,
+   "bound_cents": 5633,
+   "envelope_cents": 6000,
+   "tightness": 0.939,
+   "elapsed_s": 9.1,
+   "source": "instrument ETH\nentry buy 1 at 2997\nsl: exit all at entry - 35 allow 20 when price <= entry - 35   oco tp\ntp: take all at entry + 70   oco sl\n"
+  },
+  {
+   "brief": "brief-016",
+   "tags": "short,qty2,uncertifiable:tiny_budget",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1216,
+   "bound_cents": 2000,
+   "envelope_cents": 2000,
+   "tightness": 1.0,
+   "elapsed_s": 5.2,
+   "source": "instrument ETH\nentry sell 2 at 3013\nsl: exit all at entry + 35 allow 25 when price >= entry + 35   oco tp\ntp: take all at entry - 40   oco sl\n"
+  },
+  {
+   "brief": "brief-017",
+   "tags": "long,qty1,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1217,
+   "bound_cents": 2636,
+   "envelope_cents": 3000,
+   "tightness": 0.879,
+   "elapsed_s": 5.2,
+   "source": "instrument ETH\nentry buy 1 at 3004\nsl: exit all at entry - 5 allow 20 when price <= entry - 5   oco tp\ntp: take all at entry + 54   oco sl\n"
+  },
+  {
+   "brief": "brief-018",
+   "tags": "short,qty1,uncertifiable:no_stop",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1218,
+   "bound_cents": 3337,
+   "envelope_cents": 4000,
+   "tightness": 0.834,
+   "elapsed_s": 4.0,
+   "source": "instrument ETH\nentry sell 1 at 3034\nsl: exit all at entry + 12 allow 20 when price >= entry + 12   oco tp\ntp: take all at entry - 70   oco sl\n"
+  },
+  {
+   "brief": "brief-019",
+   "tags": "long,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1219,
+   "bound_cents": 3735,
+   "envelope_cents": 6000,
+   "tightness": 0.623,
+   "elapsed_s": 9.0,
+   "source": "instrument ETH\nentry buy 1 at 3007\nsl: exit all at entry - 16 allow 20 when price <= entry - 16   oco tp\ntp: take all at entry + 34   oco sl\n"
+  },
+  {
+   "brief": "brief-020",
+   "tags": "short,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1220,
+   "bound_cents": 5336,
+   "envelope_cents": 5500,
+   "tightness": 0.97,
+   "elapsed_s": 5.4,
+   "source": "instrument ETH\nentry sell 1 at 3034\nsl: exit all at entry + 32 allow 20 when price >= entry + 32   oco tp\ntp: take all at entry - 37   oco sl\n"
+  },
+  {
+   "brief": "brief-021",
+   "tags": "long,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1221,
+   "bound_cents": 3935,
+   "envelope_cents": 6000,
+   "tightness": 0.656,
+   "elapsed_s": 8.8,
+   "source": "instrument ETH\nentry buy 1 at 3002\nsl: exit all at entry - 23 allow 15 when price <= entry - 23   oco tp\ntp: take all at entry + 22   oco sl\n"
+  },
+  {
+   "brief": "brief-022",
+   "tags": "short,qty1,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1222,
+   "bound_cents": 3736,
+   "envelope_cents": 6000,
+   "tightness": 0.623,
+   "elapsed_s": 4.4,
+   "source": "instrument ETH\nentry sell 1 at 3035\nsl: exit all at entry + 11 allow 25 when price >= entry + 11   oco tp\ntp: take all at entry - 19   oco sl\n"
+  },
+  {
+   "brief": "brief-023",
+   "tags": "short,qty2,allow_hint,uncertifiable:scale_in_over_exposure",
+   "first_http": 422,
+   "first_status": "rejected",
+   "droid_rounds": 3,
+   "final": "certified",
+   "program_id": 1223,
+   "bound_cents": 8000,
+   "envelope_cents": 8000,
+   "tightness": 1.0,
+   "elapsed_s": 2.8,
+   "source": "instrument ETH\nentry sell 2 at 3026\nsl: exit all at entry + 11 allow 30 when price >= entry + 11   oco tp\ntp: take all at entry - 17   oco sl\n"
+  },
+  {
+   "brief": "brief-024",
+   "tags": "short,qty2,uncertifiable:no_stop",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1224,
+   "bound_cents": 5000,
+   "envelope_cents": 5000,
+   "tightness": 1.0,
+   "elapsed_s": 6.9,
+   "source": "instrument ETH\nentry sell 2 at 3016\nsl: exit all at entry + 12 allow 20 when price >= entry + 12   oco tp\ntp: take all at entry - 29   oco sl\n"
+  },
+  {
+   "brief": "brief-025",
+   "tags": "long,qty2,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1225,
+   "bound_cents": 5136,
+   "envelope_cents": 6000,
+   "tightness": 0.856,
+   "elapsed_s": 2.5,
+   "source": "instrument ETH\nentry buy 2 at 3009\nsl: exit all at entry - 5 allow 20 when price <= entry - 5   oco tp\ntp: take all at entry + 54   oco sl\n"
+  },
+  {
+   "brief": "brief-026",
+   "tags": "short,qty1,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1226,
+   "bound_cents": 3336,
+   "envelope_cents": 4000,
+   "tightness": 0.834,
+   "elapsed_s": 8.4,
+   "source": "instrument ETH\nentry sell 1 at 3013\nsl: exit all at entry + 7 allow 25 when price >= entry + 7   oco tp\ntp: take all at entry - 37   oco sl\n"
+  },
+  {
+   "brief": "brief-027",
+   "tags": "short,qty2,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1227,
+   "bound_cents": 7536,
+   "envelope_cents": 8000,
+   "tightness": 0.942,
+   "elapsed_s": 5.4,
+   "source": "instrument ETH\nentry sell 2 at 3035\nsl: exit all at entry + 22 allow 15 when price >= entry + 22   oco tp\ntp: take all at entry - 69   oco sl\n"
+  },
+  {
+   "brief": "brief-028",
+   "tags": "short,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1228,
+   "bound_cents": 4635,
+   "envelope_cents": 5000,
+   "tightness": 0.927,
+   "elapsed_s": 4.8,
+   "source": "instrument ETH\nentry sell 1 at 3012\nsl: exit all at entry + 15 allow 30 when price >= entry + 15   oco tp\ntp: take all at entry - 32   oco sl\n"
+  },
+  {
+   "brief": "brief-029",
+   "tags": "long,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1229,
+   "bound_cents": 6334,
+   "envelope_cents": 6500,
+   "tightness": 0.974,
+   "elapsed_s": 7.3,
+   "source": "instrument ETH\nentry buy 1 at 3001\nsl: exit all at entry - 32 allow 30 when price <= entry - 32   oco tp\ntp: take all at entry + 41   oco sl\n"
+  },
+  {
+   "brief": "brief-030",
+   "tags": "short,qty1,allow_hint,certifiable",
+   "first_http": 422,
+   "first_status": "rejected",
+   "droid_rounds": 1,
+   "final": "certified",
+   "program_id": 1230,
+   "bound_cents": 2637,
+   "envelope_cents": 3000,
+   "tightness": 0.879,
+   "elapsed_s": 6.3,
+   "source": "instrument ETH\nentry sell 1 at 3035\nsl: exit all at entry + 10 allow 15 when price >= entry + 10   oco tp\ntp: take all at entry - 62   oco sl\n"
+  },
+  {
+   "brief": "brief-031",
+   "tags": "short,qty2,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1231,
+   "bound_cents": 7936,
+   "envelope_cents": 8000,
+   "tightness": 0.992,
+   "elapsed_s": 6.9,
+   "source": "instrument ETH\nentry sell 2 at 3017\nsl: exit all at entry + 9 allow 30 when price >= entry + 9   oco tp\ntp: take all at entry - 17   oco sl\n"
+  },
+  {
+   "brief": "brief-032",
+   "tags": "long,qty1,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1232,
+   "bound_cents": 3236,
+   "envelope_cents": 4000,
+   "tightness": 0.809,
+   "elapsed_s": 2.8,
+   "source": "instrument ETH\nentry buy 1 at 3003\nsl: exit all at entry - 6 allow 25 when price <= entry - 6   oco tp\ntp: take all at entry + 26   oco sl\n"
+  },
+  {
+   "brief": "brief-033",
+   "tags": "short,qty1,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1233,
+   "bound_cents": 5000,
+   "envelope_cents": 5000,
+   "tightness": 1.0,
+   "elapsed_s": 2.8,
+   "source": "instrument ETH\nentry sell 1 at 3021\nsl: exit all at entry + 19 allow 30 when price >= entry + 19   oco tp\ntp: take all at entry - 18   oco sl\n"
+  },
+  {
+   "brief": "brief-034",
+   "tags": "short,qty1,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1234,
+   "bound_cents": 3436,
+   "envelope_cents": 5000,
+   "tightness": 0.687,
+   "elapsed_s": 8.3,
+   "source": "instrument ETH\nentry sell 1 at 3010\nsl: exit all at entry + 18 allow 15 when price >= entry + 18   oco tp\ntp: take all at entry - 15   oco sl\n"
+  },
+  {
+   "brief": "brief-035",
+   "tags": "long,qty2,uncertifiable:tiny_budget",
+   "first_http": 422,
+   "first_status": "rejected",
+   "droid_rounds": 3,
+   "final": "rejected",
+   "program_id": null,
+   "bound_cents": null,
+   "envelope_cents": 2000,
+   "tightness": null,
+   "elapsed_s": 5.7,
+   "source": "instrument ETH\nentry buy 2 at 3002\nsl: exit all at entry - 15 allow 30 when price <= entry - 15   oco tp\ntp: take all at entry + 23   oco sl\n"
+  },
+  {
+   "brief": "brief-036",
+   "tags": "short,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1236,
+   "bound_cents": 2236,
+   "envelope_cents": 4000,
+   "tightness": 0.559,
+   "elapsed_s": 7.0,
+   "source": "instrument ETH\nentry sell 1 at 3017\nsl: exit all at entry + 11 allow 10 when price >= entry + 11   oco tp\ntp: take all at entry - 50   oco sl\n"
+  },
+  {
+   "brief": "brief-037",
+   "tags": "short,qty2,uncertifiable:tiny_budget",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1237,
+   "bound_cents": 2000,
+   "envelope_cents": 2000,
+   "tightness": 1.0,
+   "elapsed_s": 5.4,
+   "source": "instrument ETH\nentry sell 2 at 3030\nsl: exit all at entry + 30 allow 25 when price >= entry + 30   oco tp\ntp: take all at entry - 68   oco sl\n"
+  },
+  {
+   "brief": "brief-038",
+   "tags": "short,qty1,uncertifiable:no_stop",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1238,
+   "bound_cents": 2336,
+   "envelope_cents": 6000,
+   "tightness": 0.389,
+   "elapsed_s": 5.6,
+   "source": "instrument ETH\nentry sell 1 at 3011\nsl: exit all at entry + 12 allow 10 when price >= entry + 12   oco tp\ntp: take all at entry - 43   oco sl\n"
+  },
+  {
+   "brief": "brief-039",
+   "tags": "short,qty2,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1239,
+   "bound_cents": 7536,
+   "envelope_cents": 8000,
+   "tightness": 0.942,
+   "elapsed_s": 5.8,
+   "source": "instrument ETH\nentry sell 2 at 3018\nsl: exit all at entry + 22 allow 15 when price >= entry + 22   oco tp\ntp: take all at entry - 50   oco sl\n"
+  },
+  {
+   "brief": "brief-040",
+   "tags": "short,qty1,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1240,
+   "bound_cents": 3636,
+   "envelope_cents": 4000,
+   "tightness": 0.909,
+   "elapsed_s": 6.1,
+   "source": "instrument ETH\nentry sell 1 at 3015\nsl: exit all at entry + 25 allow 10 when price >= entry + 25   oco tp\ntp: take all at entry - 59   oco sl\n"
+  },
+  {
+   "brief": "brief-041",
+   "tags": "short,qty1,allow_hint,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1241,
+   "bound_cents": 4936,
+   "envelope_cents": 5000,
+   "tightness": 0.987,
+   "elapsed_s": 8.6,
+   "source": "instrument ETH\nentry sell 1 at 3035\nsl: exit all at entry + 18 allow 30 when price >= entry + 18   oco tp\ntp: take all at entry - 37   oco sl\n"
+  },
+  {
+   "brief": "brief-042",
+   "tags": "long,qty2,allow_hint,certifiable",
+   "first_http": 422,
+   "first_status": "rejected",
+   "droid_rounds": 1,
+   "final": "certified",
+   "program_id": 1242,
+   "bound_cents": 6536,
+   "envelope_cents": 7000,
+   "tightness": 0.934,
+   "elapsed_s": 8.5,
+   "source": "instrument ETH\nentry buy 2 at 3010\nsl: exit all at entry - 22 allow 10 when price <= entry - 22   oco tp\ntp: take all at entry + 32   oco sl\n"
+  },
+  {
+   "brief": "brief-043",
+   "tags": "long,qty1,uncertifiable:rearm_over_trades",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1243,
+   "bound_cents": 3734,
+   "envelope_cents": 6000,
+   "tightness": 0.622,
+   "elapsed_s": 6.6,
+   "source": "instrument ETH\nentry buy 1 at 2996\nsl: exit all at entry - 6 allow 30 when price <= entry - 6   oco tp\ntp: take all at entry + 41   oco sl\n"
+  },
+  {
+   "brief": "brief-044",
+   "tags": "short,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1244,
+   "bound_cents": 3636,
+   "envelope_cents": 8000,
+   "tightness": 0.455,
+   "elapsed_s": 4.8,
+   "source": "instrument ETH\nentry sell 1 at 3033\nsl: exit all at entry + 20 allow 15 when price >= entry + 20   oco tp\ntp: take all at entry - 25   oco sl\n"
+  },
+  {
+   "brief": "brief-045",
+   "tags": "long,qty1,uncertifiable:scale_in_over_exposure",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1245,
+   "bound_cents": 2736,
+   "envelope_cents": 5000,
+   "tightness": 0.547,
+   "elapsed_s": 6.6,
+   "source": "instrument ETH\nentry buy 1 at 3005\nsl: exit all at entry - 11 allow 15 when price <= entry - 11   oco tp\ntp: take all at entry + 51   oco sl\n"
+  },
+  {
+   "brief": "brief-046",
+   "tags": "short,qty1,uncertifiable:scale_in_over_exposure",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1246,
+   "bound_cents": 2536,
+   "envelope_cents": 8000,
+   "tightness": 0.317,
+   "elapsed_s": 8.2,
+   "source": "instrument ETH\nentry sell 1 at 3015\nsl: exit all at entry + 9 allow 15 when price >= entry + 9   oco tp\ntp: take all at entry - 61   oco sl\n"
+  },
+  {
+   "brief": "brief-047",
+   "tags": "short,qty2,uncertifiable:tiny_budget",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1247,
+   "bound_cents": 2000,
+   "envelope_cents": 2000,
+   "tightness": 1.0,
+   "elapsed_s": 2.6,
+   "source": "instrument ETH\nentry sell 2 at 3022\nsl: exit all at entry + 22 allow 30 when price >= entry + 22   oco tp\ntp: take all at entry - 25   oco sl\n"
+  },
+  {
+   "brief": "brief-048",
+   "tags": "short,qty2,allow_hint,uncertifiable:tiny_budget",
+   "first_http": 422,
+   "first_status": "rejected",
+   "droid_rounds": 2,
+   "final": "certified",
+   "program_id": 1248,
+   "bound_cents": 2000,
+   "envelope_cents": 2000,
+   "tightness": 1.0,
+   "elapsed_s": 9.1,
+   "source": "instrument ETH\nentry sell 2 at 3031\nsl: exit all at entry + 28 allow 25 when price >= entry + 28   oco tp\ntp: take all at entry - 15   oco sl\n"
+  },
+  {
+   "brief": "brief-049",
+   "tags": "short,qty2,uncertifiable:rearm_over_trades",
+   "first_http": 422,
+   "first_status": "rejected",
+   "droid_rounds": 3,
+   "final": "certified",
+   "program_id": 1249,
+   "bound_cents": 4537,
+   "envelope_cents": 8000,
+   "tightness": 0.567,
+   "elapsed_s": 9.2,
+   "source": "instrument ETH\nentry sell 2 at 3030\nsl: exit all at entry + 7 allow 15 when price >= entry + 7   oco tp\ntp: take all at entry - 16   oco sl\n"
+  },
+  {
+   "brief": "brief-050",
+   "tags": "short,qty1,certifiable",
+   "first_http": 200,
+   "first_status": "certified",
+   "droid_rounds": 0,
+   "final": "certified",
+   "program_id": 1250,
+   "bound_cents": 3237,
+   "envelope_cents": 4000,
+   "tightness": 0.809,
+   "elapsed_s": 2.9,
+   "source": "instrument ETH\nentry sell 1 at 3035\nsl: exit all at entry + 6 allow 25 when price >= entry + 6   oco tp\ntp: take all at entry - 23   oco sl\n"
+  }
+ ],
+ "series": {
+  "tightness": [
+   [
+    1,
+    0.659
+   ],
+   [
+    2,
+    0.747
+   ],
+   [
+    3,
+    0.539
+   ],
+   [
+    4,
+    0.987
+   ],
+   [
+    5,
+    1.0
+   ],
+   [
+    7,
+    0.962
+   ],
+   [
+    8,
+    1.0
+   ],
+   [
+    9,
+    0.689
+   ],
+   [
+    10,
+    0.922
+   ],
+   [
+    11,
+    0.942
+   ],
+   [
+    12,
+    0.984
+   ],
+   [
+    13,
+    0.942
+   ],
+   [
+    15,
+    0.939
+   ],
+   [
+    16,
+    1.0
+   ],
+   [
+    17,
+    0.879
+   ],
+   [
+    18,
+    0.834
+   ],
+   [
+    19,
+    0.623
+   ],
+   [
+    20,
+    0.97
+   ],
+   [
+    21,
+    0.656
+   ],
+   [
+    22,
+    0.623
+   ],
+   [
+    23,
+    1.0
+   ],
+   [
+    24,
+    1.0
+   ],
+   [
+    25,
+    0.856
+   ],
+   [
+    26,
+    0.834
+   ],
+   [
+    27,
+    0.942
+   ],
+   [
+    28,
+    0.927
+   ],
+   [
+    29,
+    0.974
+   ],
+   [
+    30,
+    0.879
+   ],
+   [
+    31,
+    0.992
+   ],
+   [
+    32,
+    0.809
+   ],
+   [
+    33,
+    1.0
+   ],
+   [
+    34,
+    0.687
+   ],
+   [
+    36,
+    0.559
+   ],
+   [
+    37,
+    1.0
+   ],
+   [
+    38,
+    0.389
+   ],
+   [
+    39,
+    0.942
+   ],
+   [
+    40,
+    0.909
+   ],
+   [
+    41,
+    0.987
+   ],
+   [
+    42,
+    0.934
+   ],
+   [
+    43,
+    0.622
+   ],
+   [
+    44,
+    0.455
+   ],
+   [
+    45,
+    0.547
+   ],
+   [
+    46,
+    0.317
+   ],
+   [
+    47,
+    1.0
+   ],
+   [
+    48,
+    1.0
+   ],
+   [
+    49,
+    0.567
+   ],
+   [
+    50,
+    0.809
+   ]
+  ],
+  "droid_rounds": [
+   [
+    1,
+    0
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    6,
+    3
+   ],
+   [
+    7,
+    0
+   ],
+   [
+    8,
+    0
+   ],
+   [
+    9,
+    0
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    11,
+    0
+   ],
+   [
+    12,
+    0
+   ],
+   [
+    13,
+    0
+   ],
+   [
+    14,
+    3
+   ],
+   [
+    15,
+    0
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    17,
+    0
+   ],
+   [
+    18,
+    0
+   ],
+   [
+    19,
+    0
+   ],
+   [
+    20,
+    0
+   ],
+   [
+    21,
+    0
+   ],
+   [
+    22,
+    0
+   ],
+   [
+    23,
+    3
+   ],
+   [
+    24,
+    0
+   ],
+   [
+    25,
+    0
+   ],
+   [
+    26,
+    0
+   ],
+   [
+    27,
+    0
+   ],
+   [
+    28,
+    0
+   ],
+   [
+    29,
+    0
+   ],
+   [
+    30,
+    1
+   ],
+   [
+    31,
+    0
+   ],
+   [
+    32,
+    0
+   ],
+   [
+    33,
+    0
+   ],
+   [
+    34,
+    0
+   ],
+   [
+    35,
+    3
+   ],
+   [
+    36,
+    0
+   ],
+   [
+    37,
+    0
+   ],
+   [
+    38,
+    0
+   ],
+   [
+    39,
+    0
+   ],
+   [
+    40,
+    0
+   ],
+   [
+    41,
+    0
+   ],
+   [
+    42,
+    1
+   ],
+   [
+    43,
+    0
+   ],
+   [
+    44,
+    0
+   ],
+   [
+    45,
+    0
+   ],
+   [
+    46,
+    0
+   ],
+   [
+    47,
+    0
+   ],
+   [
+    48,
+    2
+   ],
+   [
+    49,
+    3
+   ],
+   [
+    50,
+    0
+   ]
+  ]
+ },
+ "log": [
+  {
+   "t": 1792236004000,
+   "msg": "50 briefs (evals/data/briefs.json), model claude-opus-5-5 via chalk, envelope per brief",
+   "data": {}
+  },
+  {
+   "t": 1792236011754,
+   "msg": "brief-001: program 1201 \u2192 200 certified, bound 2637c / envelope 4000c",
+   "data": {}
+  },
+  {
+   "t": 1792236050467,
+   "msg": "brief-006: program 1206 \u2192 422 max_loss_cents (gap path); droid round 1",
+   "data": {}
+  },
+  {
+   "t": 1792236052967,
+   "msg": "brief-006: gave up after 3 rounds (uncertifiable:scale_in_over_exposure)",
+   "data": {}
+  },
+  {
+   "t": 1792236080865,
+   "msg": "brief-010: program 1210 \u2192 200 certified, bound 5535c / envelope 6000c",
+   "data": {}
+  },
+  {
+   "t": 1792236110480,
+   "msg": "brief-014: program 1214 \u2192 422 max_loss_cents (gap path); droid round 1",
+   "data": {}
+  },
+  {
+   "t": 1792236112980,
+   "msg": "brief-014: gave up after 3 rounds (uncertifiable:no_stop)",
+   "data": {}
+  },
+  {
+   "t": 1792236146362,
+   "msg": "brief-019: program 1219 \u2192 200 certified, bound 3735c / envelope 6000c",
+   "data": {}
+  },
+  {
+   "t": 1792236178399,
+   "msg": "brief-023: program 1223 \u2192 422 max_loss_cents (gap path); droid round 1",
+   "data": {}
+  },
+  {
+   "t": 1792236180899,
+   "msg": "brief-023: repaired program certifies at 8000c after 3 round(s)",
+   "data": {}
+  },
+  {
+   "t": 1792236212752,
+   "msg": "brief-028: program 1228 \u2192 200 certified, bound 4635c / envelope 5000c",
+   "data": {}
+  },
+  {
+   "t": 1792236222933,
+   "msg": "brief-030: program 1230 \u2192 422 max_loss_cents (gap path); droid round 1",
+   "data": {}
+  },
+  {
+   "t": 1792236225433,
+   "msg": "brief-030: repaired program certifies at 2637c after 1 round(s)",
+   "data": {}
+  },
+  {
+   "t": 1792236266261,
+   "msg": "brief-035: program 1235 \u2192 422 max_loss_cents (gap path); droid round 1",
+   "data": {}
+  },
+  {
+   "t": 1792236268761,
+   "msg": "brief-035: gave up after 3 rounds (uncertifiable:tiny_budget)",
+   "data": {}
+  },
+  {
+   "t": 1792236279386,
+   "msg": "brief-037: program 1237 \u2192 200 certified, bound 2000c / envelope 2000c",
+   "data": {}
+  },
+  {
+   "t": 1792236315862,
+   "msg": "brief-042: program 1242 \u2192 422 max_loss_cents (gap path); droid round 1",
+   "data": {}
+  },
+  {
+   "t": 1792236318362,
+   "msg": "brief-042: repaired program certifies at 6536c after 1 round(s)",
+   "data": {}
+  },
+  {
+   "t": 1792236343528,
+   "msg": "brief-046: program 1246 \u2192 200 certified, bound 2536c / envelope 8000c",
+   "data": {}
+  },
+  {
+   "t": 1792236364023,
+   "msg": "brief-048: program 1248 \u2192 422 max_loss_cents (gap path); droid round 1",
+   "data": {}
+  },
+  {
+   "t": 1792236366523,
+   "msg": "brief-048: repaired program certifies at 2000c after 2 round(s)",
+   "data": {}
+  },
+  {
+   "t": 1792236373963,
+   "msg": "brief-049: program 1249 \u2192 422 max_loss_cents (gap path); droid round 1",
+   "data": {}
+  },
+  {
+   "t": 1792236376463,
+   "msg": "brief-049: repaired program certifies at 4537c after 3 round(s)",
+   "data": {}
+  },
+  {
+   "t": 1792236384243,
+   "msg": "first pass 42/50 \u00b7 certified after repair 47/50 \u00b7 tightness mean 0.826",
+   "data": {}
+  }
+ ],
+ "evidence": {
+  "program_ids": [
+   1201,
+   1202,
+   1203,
+   1204,
+   1205,
+   1207,
+   1208,
+   1209,
+   1210,
+   1211,
+   1212,
+   1213
+  ],
+  "certificates": {
+   "1201": {
+    "contract_version": 1,
+    "status": "certified",
+    "bound": {
+     "max_loss_cents": 3734,
+     "max_fees_cents": 136,
+     "max_exposure_lots": 1,
+     "halts_within_trades": 2
+    },
+    "assumes": {
+     "max_gap_ticks": 25,
+     "fill": "full_at_print",
+     "fee_bps": {
+      "maker": 1.0,
+      "taker": 3.5
+     },
+     "trigger_ref": "last",
+     "margin": "isolated_per_program"
+    },
+    "envelope_checked": {
+     "max_loss_cents": 4000,
+     "max_fees_cents": 500,
+     "max_trades": 60,
+     "max_exposure_lots": 2
+    },
+    "worst_path": [
+     {
+      "env": "print",
+      "at": 3010
+     },
+     {
+      "env": "gap",
+      "from": 3010,
+      "to": 2989
+     },
+     {
+      "event": "filled",
+      "node": "entry",
+      "qty": 1,
+      "price": 3000,
+      "fee_cents": 30
+     },
+     {
+      "env": "gap",
+      "from": 2989,
+      "to": 2964
+     },
+     {
+      "event": "triggered",
+      "node": "sl",
+      "print": 2964,
+      "limit": 2963
+     },
+     {
+      "event": "filled",
+      "node": "sl",
+      "qty": 1,
+      "price": 2964,
+      "fee_cents": 104
+     },
+     {
+      "event": "cancelled",
+      "node": "tp"
+     },
+     {
+      "event": "mark",
+      "position": 0,
+      "loss_cents": 3734
+     }
+    ],
+    "explored": {
+     "states": 61,
+     "paths": 104,
+     "depth": 6,
+     "ms": 2
+    },
+    "nodes": {
+     "total": 3,
+     "native": 3,
+     "relayed": 0
+    },
+    "locked_collateral_cents": 300000,
+    "engine": "fastbook v2 @ ad07434d6043",
+    "program_id": 1201,
+    "account": 1
+   }
+  }
+ }
+}

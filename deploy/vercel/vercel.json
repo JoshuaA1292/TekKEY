@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/lab/:path*", "destination": "https://prepared-racial-jobs-default.trycloudflare.com/lab/:path*" },
+    { "source": "/race/:path*", "destination": "https://prepared-racial-jobs-default.trycloudflare.com/race/:path*" },
+    { "source": "/backtest/:path*", "destination": "https://prepared-racial-jobs-default.trycloudflare.com/backtest/:path*" },
+    { "source": "/photon/:path*", "destination": "https://prepared-racial-jobs-default.trycloudflare.com/photon/:path*" },
+    { "source": "/account/:path*", "destination": "https://prepared-racial-jobs-default.trycloudflare.com/account/:path*" },
+    { "source": "/program/:path*", "destination": "https://prepared-racial-jobs-default.trycloudflare.com/program/:path*" },
+    { "source": "/healthz", "destination": "https://prepared-racial-jobs-default.trycloudflare.com/healthz" }
+  ],
+  "headers": [
+    { "source": "/(.*)", "headers": [ { "key": "Cache-Control", "value": "no-store" } ] }
+  ]
+}
