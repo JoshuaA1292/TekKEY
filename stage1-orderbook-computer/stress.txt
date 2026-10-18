@@ -1,0 +1,77 @@
+Stress round: what does the order-book computer actually need?
+
+=== S1  Minimal primitives: only 'on fill at price X -> submit', no cancel, no accept, no iceberg
+  Table 3 compiled under M: links on-fill@price=6 on-fill(any)=0 on-accept=0 | actions submit=14 cancel=0 reduce=0 halt=1 | templates limit=6 ioc=4 stop=0
+  (every link is keyed by fill price; the only actions are submit and halt; one 1-lot
+   backstop per register placed at start and re-submitted by the zero branch's own link)
+  gadgets in isolation, register 0..60 as one order or one-lot orders: 244 cases, 0 wrong
+  M, random programs                 100000 programs, 143450127 instructions (28325 halted; 12652192 non-zero / 56594954 zero DECJZ): 0 mismatches, 0 garbage violations  [36.0s]
+  M, filtered corpus                 20000 programs, 39775560 instructions (115 halted; 10612852 non-zero / 15384549 zero DECJZ): 0 mismatches, 0 garbage violations  [21.4s]
+  loop with register in {0,1}:    1000 instructions -> 1 resting orders (register + 1 backstop)
+  loop with register in {0,1}:  100000 instructions -> 1 resting orders (register + 1 backstop)
+  loop with register in {0,1}: 1000000 instructions -> 1 resting orders (register + 1 backstop)
+  -> the Lemma's stated hypotheses (fill-price-conditional routing + unbounded resting
+     quantity) suffice as written: no cancel, no accept link, no iceberg, book size =
+     sum of registers + number of registers.
+
+=== S2  Stop-branch: the exchange's stop triggers do the branching; the router never looks at a price
+  Table 3 compiled under S: links on-fill@price=0 on-fill(any)=6 on-accept=0 | actions submit=26 cancel=6 reduce=0 halt=1 | templates limit=8 ioc=4 stop=4
+  DECJZ: probe IOC prints at P (non-zero) or P+2 (zero). Then submit a sell stop-limit
+  (trigger P, limit P-1) and a buy stop-limit (trigger P+2, limit P+2): the venue fires
+  exactly one, it trades, and *that order's* fill link continues. Links carry no price.
+  gadgets in isolation: 244 cases, 0 wrong (checks: branch, register, no pending stop
+  left behind, garbage == 2 backstop lots per register, other book untouched)
+  S, random programs                 100000 programs, 143450127 instructions (28325 halted; 12652192 non-zero / 56594954 zero DECJZ): 0 mismatches, 0 garbage violations  [59.1s]
+  S, filtered corpus                 20000 programs, 39775560 instructions (115 halted; 10612852 non-zero / 15384549 zero DECJZ): 0 mismatches, 0 garbage violations  [29.2s]
+  mul 17*23      -> [0,23,391,0]       2008 instr,   2841 trades, lock-step identical
+  divmod 100/7   -> [0,4,14,2,0]        546 instr,    876 trades, lock-step identical
+  BB(4) via 3 counters under S: 578702 instr, 864286 trades, book==ref yes, ones=13 [0.3s]
+  engine rule used: a stop submitted with its trigger already crossed fires at once (confirmed)
+  -> the conditional moves from the broker's router into the matching engine's stop logic.
+     Router needs: on-fill(my order) -> submit/cancel fixed templates. Venue needs: stop-limit
+     orders that trigger on last price, including immediately if already crossed.
+
+=== S3  One security: a single order book is Turing complete (ask side + bid side = two counters)
+  layout in book 0: asks at 1000 = R0, bids at 990 = R1, backstops at 1001 / 989, clock at 995
+  single book, fill@price (M)    gadgets (R0 0..60, R1 0..3): 976 cases, 0 wrong
+  single book, fill@price (M)        50000 programs, 71908938 instructions (14070 halted; 6545704 non-zero / 28052475 zero DECJZ): 0 mismatches, 0 garbage violations  [16.6s]
+  single book, stop-branch (S)   gadgets (R0 0..60, R1 0..3): 976 cases, 0 wrong
+  single book, stop-branch (S)       50000 programs, 71908938 instructions (14070 halted; 6545704 non-zero / 28052475 zero DECJZ): 0 mismatches, 0 garbage violations  [28.3s]
+  2-counter programs (Minsky 1967) on ONE book:
+  2N, N=4        R0=16 -> 6561 = [0,8],    61828 instr,    61827 trades, peak lots in the book 6564, book==ref yes, decoded==direct yes [0.0s]
+  add 3+4        R0=648 -> 78125 = [0,0,7],  1053078 instr,  1053077 trades, peak lots in the book 78128, book==ref yes, decoded==direct yes [0.2s]
+  absdiff |2-5|  R0=972 -> 125 = [0,0,3],     5484 instr,     5483 trades, peak lots in the book 974, book==ref yes, decoded==direct yes [0.0s]
+  mul 2*2        R0=36 -> 5625 = [0,2,4,0],   390658 instr,   390657 trades, peak lots in the book 30628, book==ref yes, decoded==direct yes [0.1s]
+  -> five price levels of one instrument, two accounts, and a fill-price router suffice.
+     (Price priority means only the best ask and best bid can be probed, so a single book
+      gives exactly two counters; Minsky showed two are enough.)
+
+=== S4  Bounded books: a space-bounded Turing machine on n books that never hold more than 2 lots
+  3000 random 2-symbol TMs (1-4 states) on 4-9 cells: 1401 halted, 1534 ran off the tape, 65 hit
+  the step cap. bit-compiler vs direct tape: 0 mismatches; book vs reference: 0 mismatches;
+  books ever holding > 2 lots: 0  (341553 instructions) [0.1s]
+  BB(4): 107 steps, 13 ones, tape extent 16 cells -> 16 books + 1 clock book, 162-instruction router
+      on the book: halted at pc 160 (halt_ok=160), 182 instructions, 181 trades, 392 work items, 13 ones, tape identical, peak lots in any register book 2, final garbage 16 lots [0.0s]
+  BB(5): 47176870 steps, 4098 ones, tape extent 12291 cells -> 12291 books + 1 clock book, 159785-instruction router
+      on the book: halted at pc 159783 (halt_ok=159783), 94333336 instructions, 94333335 trades, 188683060 work items, 4098 ones, tape identical, peak lots in any register book 2, final garbage 12291 lots [20.4s]
+  -> Each security's book holds at most 2 one-lot orders (the bit and its backstop), so the
+     per-book state is constant; the state that grows is the NUMBER of securities. This is the
+     reduction behind the corrected theorem: with order counts and sizes bounded, reachability
+     is PSPACE-complete in the number of securities (and polynomial for a fixed number).
+
+=== S5  The price of computation: trades, round trips and resting orders per instruction
+  program            variant                   instr     trades orders sent  trd/ins  ord/ins
+  mul 17*23          paper (accept link)        2008        834       2842     0.42     1.42
+  mul 17*23          M fill@price only          2008       2007       4393     1.00     2.19
+  mul 17*23          S stop-branch              2008       2841       8598     1.41     4.28
+  divmod 100/7       paper (accept link)         546        331        877     0.61     1.61
+  divmod 100/7       M fill@price only           546        545       1009     1.00     1.85
+  divmod 100/7       S stop-branch               546        876       2694     1.60     4.93
+  BB(4) via 3 ctrs   paper (accept link)      578702     285585     864287     0.49     1.49
+  BB(4) via 3 ctrs   M fill@price only        578702     578701    1165597     1.00     2.01
+  BB(4) via 3 ctrs   S stop-branch            578702     864286    2594182     1.49     4.48
+  Every DECJZ is a wash trade between the router's two accounts and pays a taker fee; every
+  router action is one venue round trip. At 1 round trip per 10 ms, BB(4) via 3 counters is
+  roughly 194 minutes of exchange time; the same machine via S4's bit layout is seconds.
+
+total 212.5s

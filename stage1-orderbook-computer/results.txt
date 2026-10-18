@@ -1,0 +1,109 @@
+626 checks, 0 failures
+Stage 1: is an order book a computer?  Weinberger, arXiv 2608.28803, Sec. 6.3 Lemma + Table 2
+
+=== E1  Table 2 INC: 'place order k when order is executed'
+  paper Table 3 program (2N -> R2):
+  N   (a) wait for INC fill  (b) continue on accept (c) clock trade        reference
+  0   halted   R=[0,0]       halted   R=[0,0]       halted   R=[0,0]       halted R=[0,0]
+  1   STALLED  R=[0,1]       halted   R=[0,2]       halted   R=[0,2]       halted R=[0,2]
+  2   STALLED  R=[1,1]       halted   R=[0,4]       halted   R=[0,4]       halted R=[0,4]
+  3   STALLED  R=[2,1]       halted   R=[0,6]       halted   R=[0,6]       halted R=[0,6]
+  4   STALLED  R=[3,1]       halted   R=[0,8]       halted   R=[0,8]       halted R=[0,8]
+  5   STALLED  R=[4,1]       halted   R=[0,10]      halted   R=[0,10]      halted R=[0,10]
+  6   STALLED  R=[5,1]       halted   R=[0,12]      halted   R=[0,12]      halted R=[0,12]
+  (a) 'executed' = filled, applied to the INC sell itself: that sell is only bought by a
+      later DECJZ the router never reaches, so the first INC deadlocks.
+  (b) 'executed' = placed: works unmodified (this is the variant used in E3).
+  (c) 'executed' = filled, but INC also crosses one lot with itself in a separate clock
+      book and continues on that fill: on-fill links alone suffice (two accounts, STP on).
+
+=== E2  Appendix C definition of DECJZ vs the Table 2 gadget
+  single DECJZ(R,k=1,l=2), register value v:
+  v   gadget ->    standard ->    Appendix C -> 
+  0   I2 R=[0]     I2 R=[0]       I2 R=[0]
+  1   I1 R=[0]     I1 R=[0]       I2 R=[0]   <-- disagree
+  2   I1 R=[1]     I1 R=[1]       I1 R=[1]
+  3   I1 R=[2]     I1 R=[2]       I1 R=[2]
+  paper Table 3 ('computes 2N'), interpreted under each definition:
+    N=1  standard R2=2   Appendix C R2=0
+    N=2  standard R2=4   Appendix C R2=2
+    N=3  standard R2=6   Appendix C R2=4
+    N=4  standard R2=8   Appendix C R2=6
+    N=5  standard R2=10   Appendix C R2=8
+  random programs: gadget matches standard semantics 20000/20000, Appendix C 13087/20000
+
+=== E3  Lock-step differential test: compiled order program vs reference interpreter
+  paper gadgets (INC on accept)        100000 programs, 143450127 instructions compared (28325 halted, 71675 hit the 2000-step cap): 0 mismatches  [761.5s]
+    coverage: 12652192 non-zero DECJZ, 56594954 zero DECJZ; 51909 programs (52%) visit <= 2 distinct instructions
+  + backstop cancelled on non-zero     100000 programs, 143450127 instructions compared (28325 halted, 71675 hit the 2000-step cap): 0 mismatches  [229.1s]
+  fill-only links (clock INC), 2 accts 100000 programs, 143450127 instructions compared (28325 halted, 71675 hit the 2000-step cap): 0 mismatches  [106.2s]
+  filtered corpus (>= 4 distinct instructions, >= 20 non-zero and >= 3 zero DECJZ; kept 20000 of
+  292961 generated), all 3 variants: 39775560 instructions each (10612852 non-zero / 15384549 zero DECJZ,
+  mean 5.6 distinct instructions): 0 mismatches  [160.1s]
+  (registers are read from the books' resting quantity at P_i before every instruction;
+   the first 2000 programs also compare the full (pc, registers) trace element by element)
+
+=== E4  Exhaustive local gadget check (base case of the simulation proof)
+  DECJZ and INC gadgets, register 0..60 (one order or 60 one-lot orders), garbage 0..60,
+  with and without backstop cleanup: 15128 cases, 0 wrong
+  checked per case: branch taken, register after, backstop lots after, no stray bids,
+  exactly one trade for DECJZ / none for INC, every other book bit-identical
+
+=== E5  Real programs, Minsky's 2-counter reduction, and Turing machines on the order book
+  paper Table 3: 2N, N=7     -> [0,14]                   24 instr,        9 trades, lock-step identical
+  add 13+29                  -> [0,0,42]                 87 instr,       44 trades, lock-step identical
+  absdiff |5-12|             -> [0,0,7]                  27 instr,       19 trades, lock-step identical
+  absdiff |12-5|             -> [0,0,7]                  27 instr,       19 trades, lock-step identical
+  mul 17*23                  -> [0,23,391,0]           2008 instr,      834 trades, lock-step identical
+  divmod 100/7               -> [0,4,14,2,0]            546 instr,      331 trades, lock-step identical
+  two books only (Minsky 1967: two counters are Turing complete):
+  2N via 2 counters, N=4           39-instr 2-counter program, R0=16 -> R0=6561 = [0,8],     61828 instr, book==ref2 yes, decoded==direct yes [0.0s]
+  add 3+4 via 2 counters           43-instr 2-counter program, R0=648 -> R0=78125 = [0,0,7],   1053078 instr, book==ref2 yes, decoded==direct yes [0.2s]
+  absdiff |2-5| via 2 counters     77-instr 2-counter program, R0=972 -> R0=125 = [0,0,3],      5484 instr, book==ref2 yes, decoded==direct yes [0.0s]
+  mul 2*2 via 2 counters          130-instr 2-counter program, R0=36 -> R0=5625 = [0,2,4,0],    390658 instr, book==ref2 yes, decoded==direct yes [0.1s]
+  Turing machines compiled to 3 counters (L, R, temp), then to orders:
+  busy beaver BB(2)  direct:   6 steps,  4 ones | on the book:   75-instr program,       229 instr,       129 trades,  4 ones, tape identical, book==ref yes [0.0s]
+  busy beaver BB(4)  direct: 107 steps, 13 ones | on the book:  147-instr program,    578702 instr,    285585 trades, 13 ones, tape identical, book==ref yes [0.1s]
+
+=== E6  Backstop leak: book size vs running time for a program whose registers stay in {0,1}
+  instr      paper gadget: resting orders with cleanup: resting orders
+  1000       500                          0                           
+  10000      5000                         0                           
+  100000     50000                        0                           
+  1000000    500000                       0                           
+  -> with the gadget as written the book grows linearly with time even though no
+     register exceeds 1, so a bounded book cannot run even a bounded-register machine
+     for long. Cancelling the backstop on the non-zero branch keeps it constant.
+
+=== E7  Ablation: the book without the router (no links)
+  20000 random order sets (1-200 orders of every type, 3 books, stops cascading):
+  all quiesced; bound violations (trades > Q/2, or triggered-stop work > #stops): 0;
+  worst 2*trades/Q = 0.71
+  -> without links nothing creates quantity, every trade removes >= 2 lots, every stop
+     fires at most once: a finite order set always halts within Q/2 trades. Unbounded
+     iteration (loops) exists only through the router re-submitting orders.
+
+=== E8  Self-trade prevention (Hyperliquid documents expire-maker for same-address trades)
+  paper Table 3, N=3 (expect R2=6):
+    1 account   STP=none          -> halted    R=[0,6]    after 12 instr
+    1 account   STP=expire-maker  -> STALLED   R=[3,0]    after 1 instr
+    1 account   STP=cancel-taker  -> STALLED   R=[3,0]    after 1 instr
+    2 accounts  STP=none          -> halted    R=[0,6]    after 12 instr
+    2 accounts  STP=expire-maker  -> halted    R=[0,6]    after 12 instr
+    2 accounts  STP=cancel-taker  -> halted    R=[0,6]    after 12 instr
+  single DECJZ on a register holding 5 lots (expect R=4, non-zero branch):
+    1 account   STP=expire-maker  -> STALLED   R=[0]  backstop lots left=0, trades=0
+    1 account   STP=cancel-taker  -> STALLED   R=[5]  backstop lots left=1, trades=0
+  -> with one account the DECJZ buy can only ever meet the router's own sells (register
+     lots or its own backstop), so STP blocks every fill: no fill price, no branch, the
+     router stalls on the first DECJZ. Expire-maker additionally cancels the whole register.
+     Splitting buyer and seller across two accounts restores the computation.
+
+=== E9  Other market participants
+  (a) third-party orders in OTHER securities between router steps: 20000 programs, 6811287
+      foreign orders injected, 0 mismatches  -> paper's claim holds (by construction:
+      books share no state and foreign orders fire no links; this is a sanity check)
+  (b) ONE third-party 1-lot market buy in a register's own book: 14976 runs hit, 12337
+      computed something else (1019 of them stalled the router)
+
+total 1272.3s

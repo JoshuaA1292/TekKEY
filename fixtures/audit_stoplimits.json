@@ -1,0 +1,2538 @@
+{
+ "source": "audit/data (Alpha Arena season 1, Hyperliquid public API)",
+ "selection": "orderType Stop Limit, triggerPx > 0, inside the season window, one record per oid",
+ "count": 253,
+ "zero_allowance": 253,
+ "orders": [
+  {
+   "model": "deepseek",
+   "oid": 206132736980,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "102030.0",
+   "limit": "102030.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 221347431530,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "939.75",
+   "limit": "939.75",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 217494938397,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3513.3",
+   "limit": "3513.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 220476821555,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1023.6",
+   "limit": "1023.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 217495076308,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "170.85",
+   "limit": "170.85",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 217382172244,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3639.9",
+   "limit": "3639.9",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 217158280127,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3585.6",
+   "limit": "3585.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 217097368137,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3618.3",
+   "limit": "3618.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 211368857567,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3822.4",
+   "limit": "3822.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 211594183598,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1098.0",
+   "limit": "1098.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 204642449911,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "176.71",
+   "limit": "176.71",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 210492550639,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1086.3",
+   "limit": "1086.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 211305553242,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3887.8",
+   "limit": "3887.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 209201958391,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3682.1",
+   "limit": "3682.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 208723861925,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1000.4",
+   "limit": "1000.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 204642392537,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3714.9",
+   "limit": "3714.9",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 205943827354,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1016.7",
+   "limit": "1016.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 204651434120,
+   "coin": "XRP",
+   "side": "sell",
+   "trigger": "2.2241",
+   "limit": "2.2241",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 204606956512,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "109020.0",
+   "limit": "109020.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 204687873004,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1021.5",
+   "limit": "1021.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "deepseek",
+   "oid": 204624779609,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1043.3",
+   "limit": "1043.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 221322263826,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3719.4",
+   "limit": "3719.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 217731097951,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "113320.0",
+   "limit": "113320.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 221304375153,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "173.7",
+   "limit": "173.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 220708110242,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3819.1",
+   "limit": "3819.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 220867997211,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1050.0",
+   "limit": "1050.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 221076200495,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "178.85",
+   "limit": "178.85",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 217663541194,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1109.0",
+   "limit": "1109.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 219345779967,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "189.83",
+   "limit": "189.83",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 217870898116,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3926.4",
+   "limit": "3926.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 218353560478,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "192.42",
+   "limit": "192.42",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 217600839160,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "180.42",
+   "limit": "180.42",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 217318021530,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1099.6",
+   "limit": "1099.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 217129604243,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "189.5",
+   "limit": "189.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 217106227436,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3864.1",
+   "limit": "3864.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 216203148912,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "112700.0",
+   "limit": "112700.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 216239973293,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "190.39",
+   "limit": "190.39",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 215345263466,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "191.09",
+   "limit": "191.09",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 214297698195,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "196.75",
+   "limit": "196.75",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 213881578029,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1121.0",
+   "limit": "1121.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 210630767811,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1083.0",
+   "limit": "1083.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 212940278333,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "195.88",
+   "limit": "195.88",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 212931819019,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "112510.0",
+   "limit": "112510.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 211461729887,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "184.47",
+   "limit": "184.47",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 211386467799,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3856.2",
+   "limit": "3856.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 210131650685,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "108090.0",
+   "limit": "108090.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 210188920030,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "185.15",
+   "limit": "185.15",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 208729098577,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3755.0",
+   "limit": "3755.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 208344149212,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "201.98",
+   "limit": "201.98",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 208352374656,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "114310.0",
+   "limit": "114310.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 208262640708,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4014.2",
+   "limit": "4014.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 206329928366,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106490.0",
+   "limit": "106490.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 206177825883,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3843.1",
+   "limit": "3843.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gpt5",
+   "oid": 204618950247,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1131.7",
+   "limit": "1131.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 221286777802,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1050.0",
+   "limit": "1050.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 220120929645,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "113940.0",
+   "limit": "113940.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 221294849002,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3722.7",
+   "limit": "3722.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 221295127237,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "173.35",
+   "limit": "173.35",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 219904031871,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4044.7",
+   "limit": "4044.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 218367301441,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "195.21",
+   "limit": "195.21",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 216993580870,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1176.6",
+   "limit": "1176.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 220073142422,
+   "coin": "XRP",
+   "side": "sell",
+   "trigger": "2.4539",
+   "limit": "2.4539",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 220071691477,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "108840.0",
+   "limit": "108840.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 219912140954,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "112240.0",
+   "limit": "112240.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 217196743339,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "111800.0",
+   "limit": "111800.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 217105313933,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "194.18",
+   "limit": "194.18",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 217155988213,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "110100.0",
+   "limit": "110100.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 217138308553,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "104910.0",
+   "limit": "104910.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 215264251505,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "116000.0",
+   "limit": "116000.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 216841465102,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "186.15",
+   "limit": "186.15",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 217084393659,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3742.6",
+   "limit": "3742.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 215269607440,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4099.2",
+   "limit": "4099.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 216972410928,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1082.1",
+   "limit": "1082.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 216333098136,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1137.5",
+   "limit": "1137.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 216658869163,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "201.98",
+   "limit": "201.98",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 216598091956,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "190.58",
+   "limit": "190.58",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 216200919870,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "202.08",
+   "limit": "202.08",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 215704758231,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1174.3",
+   "limit": "1174.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 216176588886,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "191.51",
+   "limit": "191.51",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 216103271813,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "205.05",
+   "limit": "205.05",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 215849151612,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "191.88",
+   "limit": "191.88",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 215267003126,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "200.44",
+   "limit": "200.44",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 215700310268,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1129.0",
+   "limit": "1129.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 215269711672,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1168.0",
+   "limit": "1168.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 215465636772,
+   "coin": "XRP",
+   "side": "sell",
+   "trigger": "2.5257",
+   "limit": "2.5257",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 215435730779,
+   "coin": "XRP",
+   "side": "buy",
+   "trigger": "2.6912",
+   "limit": "2.6912",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212919606430,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3920.0",
+   "limit": "3920.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 214669159838,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1083.6",
+   "limit": "1083.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 213403784979,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "192.59",
+   "limit": "192.59",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 214796545124,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "113090.0",
+   "limit": "113090.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 214195044936,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "112150.0",
+   "limit": "112150.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 214640194096,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1178.7",
+   "limit": "1178.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 214596975970,
+   "coin": "DOGE",
+   "side": "buy",
+   "trigger": "0.2097",
+   "limit": "0.2097",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 214105581788,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1089.1",
+   "limit": "1089.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 213637243237,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "112930.0",
+   "limit": "112930.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 213871516914,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1117.1",
+   "limit": "1117.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212729556893,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1092.4",
+   "limit": "1092.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211494929687,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107530.0",
+   "limit": "107530.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211517742925,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.78",
+   "limit": "183.78",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211694451686,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3889.2",
+   "limit": "3889.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212681691232,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1140.1",
+   "limit": "1140.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212664189857,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1160.9",
+   "limit": "1160.9",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212458722636,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1059.3",
+   "limit": "1059.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212439282914,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1169.2",
+   "limit": "1169.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212385565568,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1170.7",
+   "limit": "1170.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212340265981,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1157.2",
+   "limit": "1157.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212330414585,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1069.5",
+   "limit": "1069.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212182659966,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1123.4",
+   "limit": "1123.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212149987950,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1158.5",
+   "limit": "1158.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212045676675,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1057.7",
+   "limit": "1057.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 212033203032,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1155.8",
+   "limit": "1155.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211506343987,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1132.5",
+   "limit": "1132.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211504657043,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4006.2",
+   "limit": "4006.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210769191652,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.63",
+   "limit": "183.63",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211498993145,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1143.8",
+   "limit": "1143.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211389315521,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3805.2",
+   "limit": "3805.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211489960118,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1153.3",
+   "limit": "1153.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211400500281,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1042.3",
+   "limit": "1042.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210767751090,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107310.0",
+   "limit": "107310.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210745953137,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1059.8",
+   "limit": "1059.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211383634271,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4006.4",
+   "limit": "4006.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211371769998,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3809.5",
+   "limit": "3809.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211140877425,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3809.7",
+   "limit": "3809.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 211037923407,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3841.0",
+   "limit": "3841.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208821995397,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3988.5",
+   "limit": "3988.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210353997533,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "195.39",
+   "limit": "195.39",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210183237308,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "111760.0",
+   "limit": "111760.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210731843975,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1168.5",
+   "limit": "1168.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210680699340,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1157.0",
+   "limit": "1157.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210664157534,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1061.9",
+   "limit": "1061.9",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210487977632,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1213.5",
+   "limit": "1213.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208812630068,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "195.18",
+   "limit": "195.18",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 210176778047,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1062.0",
+   "limit": "1062.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208340871376,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1163.1",
+   "limit": "1163.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208734498929,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "110550.0",
+   "limit": "110550.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208692082036,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3991.8",
+   "limit": "3991.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208733121616,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "191.95",
+   "limit": "191.95",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208731607833,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "111110.0",
+   "limit": "111110.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208728065161,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "180.7",
+   "limit": "180.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208668370584,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107940.0",
+   "limit": "107940.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208671009462,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.66",
+   "limit": "183.66",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208617556130,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3821.2",
+   "limit": "3821.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208513773116,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "184.19",
+   "limit": "184.19",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208576025683,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3854.5",
+   "limit": "3854.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208426808217,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "114020.0",
+   "limit": "114020.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208424433596,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4093.8",
+   "limit": "4093.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208496291390,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "198.89",
+   "limit": "198.89",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208419594026,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "199.13",
+   "limit": "199.13",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208416916193,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "110900.0",
+   "limit": "110900.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208323582598,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3953.2",
+   "limit": "3953.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208300659750,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "185.96",
+   "limit": "185.96",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208285562026,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "108490.0",
+   "limit": "108490.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207438865081,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1142.0",
+   "limit": "1142.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208263570470,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3850.7",
+   "limit": "3850.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207562959471,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "198.69",
+   "limit": "198.69",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 208261112134,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "108100.0",
+   "limit": "108100.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207831547920,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "110620.0",
+   "limit": "110620.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206598601083,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "104880.0",
+   "limit": "104880.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207809178355,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3788.3",
+   "limit": "3788.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207732398682,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3968.8",
+   "limit": "3968.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207728830221,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3965.0",
+   "limit": "3965.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207526410232,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "185.9",
+   "limit": "185.9",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207023010240,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.1",
+   "limit": "183.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207504946668,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3881.1",
+   "limit": "3881.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206756036689,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3897.7",
+   "limit": "3897.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207412306149,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1088.0",
+   "limit": "1088.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 207124815431,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1167.8",
+   "limit": "1167.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206758428445,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1091.5",
+   "limit": "1091.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206839508351,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "186.34",
+   "limit": "186.34",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206610047158,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "179.72",
+   "limit": "179.72",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206747474432,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1141.6",
+   "limit": "1141.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206605477878,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3874.8",
+   "limit": "3874.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206720343706,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1066.4",
+   "limit": "1066.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206682747906,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1121.5",
+   "limit": "1121.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206664738659,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1079.8",
+   "limit": "1079.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206625518525,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1043.0",
+   "limit": "1043.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206596077322,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1122.2",
+   "limit": "1122.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206591125521,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "181.48",
+   "limit": "181.48",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206589278083,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3899.9",
+   "limit": "3899.9",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206587365406,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "105600.0",
+   "limit": "105600.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206585922388,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3923.1",
+   "limit": "3923.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206572464678,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1052.0",
+   "limit": "1052.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206477852522,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "105920.0",
+   "limit": "105920.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206481777300,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "179.0",
+   "limit": "179.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206324497416,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3902.5",
+   "limit": "3902.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206476444410,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1099.6",
+   "limit": "1099.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206329028518,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1090.9",
+   "limit": "1090.9",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206330991500,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106310.0",
+   "limit": "106310.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206332771583,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "181.9",
+   "limit": "181.9",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 204951304703,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1182.6",
+   "limit": "1182.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206172228854,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "202.24",
+   "limit": "202.24",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 206169385116,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "4061.6",
+   "limit": "4061.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 204894564375,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "109340.0",
+   "limit": "109340.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 204608647505,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "109840.0",
+   "limit": "109840.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 204605892447,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3968.0",
+   "limit": "3968.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 204604418670,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3883.0",
+   "limit": "3883.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "gemini",
+   "oid": 204599989838,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "178.31",
+   "limit": "178.31",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 221298687771,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3510.8",
+   "limit": "3510.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 220559373755,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "182.1",
+   "limit": "182.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 218449756792,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "180.84",
+   "limit": "180.84",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 217064465438,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "105950.0",
+   "limit": "105950.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 212424032571,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "187.62",
+   "limit": "187.62",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 216229632470,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3814.4",
+   "limit": "3814.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 213014471020,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3945.0",
+   "limit": "3945.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 210872330859,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107680.0",
+   "limit": "107680.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 212049896814,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3808.0",
+   "limit": "3808.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 210670030787,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1047.6",
+   "limit": "1047.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 210370792150,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "182.09",
+   "limit": "182.09",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 210256354913,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3755.0",
+   "limit": "3755.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 210036047739,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1040.6",
+   "limit": "1040.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 207834780037,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3753.6",
+   "limit": "3753.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 207348499452,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3851.3",
+   "limit": "3851.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 207089126616,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "184.65",
+   "limit": "184.65",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 206803645936,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3888.0",
+   "limit": "3888.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 206885720012,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1082.5",
+   "limit": "1082.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 206184724131,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106360.0",
+   "limit": "106360.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 205037582976,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1050.5",
+   "limit": "1050.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 205029468304,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1054.3",
+   "limit": "1054.3",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "claude",
+   "oid": 204612516598,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1048.0",
+   "limit": "1048.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 221350385321,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "951.2",
+   "limit": "951.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 221299171098,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "155.11",
+   "limit": "155.11",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 221303929844,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3501.2",
+   "limit": "3501.2",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 221299328720,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "916.1",
+   "limit": "916.1",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 217690650363,
+   "coin": "ETH",
+   "side": "buy",
+   "trigger": "3933.6",
+   "limit": "3933.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 220740704478,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1065.5",
+   "limit": "1065.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 217320915793,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "190.31",
+   "limit": "190.31",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 218815423053,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1109.4",
+   "limit": "1109.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 217889311021,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1130.5",
+   "limit": "1130.5",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 217496778534,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1101.6",
+   "limit": "1101.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 216098131318,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1052.6",
+   "limit": "1052.6",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 217283417921,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "102650.0",
+   "limit": "102650.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 217317997725,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3670.4",
+   "limit": "3670.4",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 217043616708,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "104240.0",
+   "limit": "104240.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 217049653447,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "181.57",
+   "limit": "181.57",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 217049519995,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3679.0",
+   "limit": "3679.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 210822899930,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "183.96",
+   "limit": "183.96",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 211178191415,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3766.8",
+   "limit": "3766.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 216659987123,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107180.0",
+   "limit": "107180.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 216475858866,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107860.0",
+   "limit": "107860.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 210686258576,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "107110.0",
+   "limit": "107110.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 215772655141,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1066.8",
+   "limit": "1066.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 215320298577,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1046.7",
+   "limit": "1046.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 211008437822,
+   "coin": "ETH",
+   "side": "sell",
+   "trigger": "3815.8",
+   "limit": "3815.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 210470890359,
+   "coin": "BNB",
+   "side": "buy",
+   "trigger": "1182.8",
+   "limit": "1182.8",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 210485665370,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "198.79",
+   "limit": "198.79",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 210311607203,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "113240.0",
+   "limit": "113240.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 210137539386,
+   "coin": "SOL",
+   "side": "buy",
+   "trigger": "195.22",
+   "limit": "195.22",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 204618994700,
+   "coin": "BNB",
+   "side": "sell",
+   "trigger": "1045.9",
+   "limit": "1045.9",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 210092022026,
+   "coin": "BTC",
+   "side": "buy",
+   "trigger": "113230.0",
+   "limit": "113230.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 209663573061,
+   "coin": "SOL",
+   "side": "sell",
+   "trigger": "173.7",
+   "limit": "173.7",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 208923693598,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106240.0",
+   "limit": "106240.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 208671444180,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "106700.0",
+   "limit": "106700.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  },
+  {
+   "model": "grok",
+   "oid": 204601782276,
+   "coin": "BTC",
+   "side": "sell",
+   "trigger": "105770.0",
+   "limit": "105770.0",
+   "reduce_only": true,
+   "zero_allowance": true
+  }
+ ]
+}

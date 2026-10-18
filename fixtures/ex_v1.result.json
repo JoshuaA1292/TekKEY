@@ -1,0 +1,18 @@
+{
+  "contract_version": 1,
+  "status": "rejected",
+  "violates": "max_loss_cents",
+  "limit": 4000,
+  "value_on_path": 4030,
+  "counterexample": [
+    {"env": "print", "at": 3010},
+    {"env": "gap", "from": 3010, "to": 3000},
+    {"event": "filled", "node": "entry", "qty": 1, "price": 3000, "fee_cents": 30},
+    {"env": "gap", "from": 3000, "to": 2982},
+    {"event": "triggered", "node": "sl", "print": 2982, "limit": 2983},
+    {"event": "rests", "node": "sl", "reason": "limit above print"},
+    {"env": "gap", "from": 2982, "to": 2960},
+    {"event": "mark", "position": 1, "loss_cents": 4030}
+  ],
+  "explored": {"states": 39, "paths": 94, "depth": 3, "ms": 0}
+}

@@ -1,0 +1,17 @@
+P = 1000
+width = 4
+height = 4
+pixels = 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+keys = 16,17,18,19
+frame = 20
+score = 21
+death = 22
+fruit_x = 23,24,25,26
+fruit_y = 27,28,29,30
+head_x = 31,32,33,34
+head_y = 35,36,37,38
+tail_x = 39,40,41,42
+tail_y = 43,44,45,46
+cells = 50,51,52,53,54,55,56,57
+generation = 58
+key_account = 2

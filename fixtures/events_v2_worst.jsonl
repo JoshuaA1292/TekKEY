@@ -1,0 +1,7 @@
+{"contract_version":1,"type":"print","instrument":"ETH","price":3010,"t":1792202918217}
+{"contract_version":1,"type":"print","instrument":"ETH","price":2989,"t":1792202918224}
+{"contract_version":1,"type":"node.filled","program_id":7,"node":"entry","qty":1,"price":3000,"fee_cents":30,"t":1792202918224}
+{"contract_version":1,"type":"print","instrument":"ETH","price":2964,"t":1792202918230}
+{"contract_version":1,"type":"node.triggered","program_id":7,"node":"sl","print":2964,"t":1792202918230}
+{"contract_version":1,"type":"node.filled","program_id":7,"node":"sl","qty":1,"price":2964,"fee_cents":104,"t":1792202918230}
+{"contract_version":1,"type":"program.halted","program_id":7,"realized_loss_cents":3734,"fees_cents":134,"trades":2,"t":1792202918230}

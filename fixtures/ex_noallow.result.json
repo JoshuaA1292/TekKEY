@@ -1,0 +1,7 @@
+{
+  "contract_version": 1,
+  "status": "static_error",
+  "line": 3,
+  "col": 5,
+  "message": "exit requires allow >= 1 tick"
+}

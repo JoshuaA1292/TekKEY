@@ -1,0 +1,17 @@
+{
+  "contract_version": 1,
+  "account": 3,
+  "window": "24h_rolling",
+  "max_loss_cents": 4000,
+  "max_fees_cents": 500,
+  "max_trades": 60,
+  "max_exposure_lots": 2,
+  "instruments": ["ETH"],
+  "require_live_stop": true,
+  "env": {
+    "max_gap_ticks": 25,
+    "fill": "full_at_print",
+    "fee_bps": { "maker": 1.0, "taker": 3.5 },
+    "trigger_ref": "last"
+  }
+}
