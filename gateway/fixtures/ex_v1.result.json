@@ -1,0 +1,59 @@
+{
+  "contract_version": 1,
+  "status": "rejected",
+  "violates": "max_loss_cents",
+  "limit": 4000,
+  "value_on_path": 4030,
+  "counterexample": [
+    {
+      "env": "print",
+      "at": 3010
+    },
+    {
+      "env": "gap",
+      "from": 3010,
+      "to": 3000
+    },
+    {
+      "event": "filled",
+      "node": "entry",
+      "qty": 1,
+      "price": 3000,
+      "fee_cents": 30
+    },
+    {
+      "env": "print",
+      "at": 2989
+    },
+    {
+      "env": "gap",
+      "to": 2964
+    },
+    {
+      "event": "triggered",
+      "node": "sl",
+      "limit": 2983
+    },
+    {
+      "event": "rests",
+      "node": "sl",
+      "reason": "limit above print"
+    },
+    {
+      "env": "print",
+      "at": 2960
+    },
+    {
+      "event": "mark",
+      "position": 1,
+      "loss_cents": 4030
+    }
+  ],
+  "explored": {
+    "states": 0,
+    "paths": 0,
+    "depth": 9,
+    "ms": 0
+  },
+  "engine": "fake_venue"
+}

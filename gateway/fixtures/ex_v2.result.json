@@ -1,0 +1,82 @@
+{
+  "contract_version": 1,
+  "status": "certified",
+  "bound": {
+    "max_loss_cents": 3734,
+    "max_fees_cents": 136,
+    "max_exposure_lots": 1,
+    "halts_within_trades": 2
+  },
+  "assumes": {
+    "max_gap_ticks": 25,
+    "fill": "full_at_print",
+    "fee_bps": {
+      "maker": 1.0,
+      "taker": 3.5
+    },
+    "trigger_ref": "last",
+    "margin": "isolated_per_program"
+  },
+  "envelope_checked": {
+    "max_loss_cents": 4000,
+    "max_fees_cents": 500,
+    "max_trades": 60,
+    "max_exposure_lots": 2
+  },
+  "worst_path": [
+    {
+      "env": "print",
+      "at": 3010
+    },
+    {
+      "env": "gap",
+      "from": 3010,
+      "to": 3000
+    },
+    {
+      "event": "filled",
+      "node": "entry",
+      "qty": 1,
+      "price": 3000,
+      "fee_cents": 30
+    },
+    {
+      "env": "print",
+      "at": 2989
+    },
+    {
+      "env": "gap",
+      "to": 2964
+    },
+    {
+      "event": "triggered",
+      "node": "sl",
+      "limit": 2963
+    },
+    {
+      "event": "filled",
+      "node": "sl",
+      "qty": 1,
+      "price": 2964,
+      "fee_cents": 104
+    },
+    {
+      "event": "mark",
+      "position": 0,
+      "loss_cents": 3734
+    }
+  ],
+  "explored": {
+    "states": 0,
+    "paths": 0,
+    "depth": 8,
+    "ms": 0
+  },
+  "nodes": {
+    "total": 3,
+    "native": 3,
+    "relayed": 0
+  },
+  "locked_collateral_cents": 300000,
+  "engine": "fake_venue"
+}

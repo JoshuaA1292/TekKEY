@@ -1,0 +1,10 @@
+{"contract_version": 1, "type": "program.deployed", "program_id": 7, "sub_account": 1, "order_ids": {"entry": 7001, "sl": 7002, "tp": 7003}, "t": 1792203364853}
+{"contract_version": 1, "type": "print", "instrument": "ETH", "price": 3010, "t": 1792203364853}
+{"contract_version": 1, "type": "print", "instrument": "ETH", "price": 3000, "t": 1792203364853}
+{"contract_version": 1, "type": "node.filled", "program_id": 7, "node": "entry", "qty": 1, "price": 3000, "fee_cents": 30, "t": 1792203364853}
+{"contract_version": 1, "type": "print", "instrument": "ETH", "price": 2989, "t": 1792203364853}
+{"contract_version": 1, "type": "print", "instrument": "ETH", "price": 2964, "t": 1792203364853}
+{"contract_version": 1, "type": "node.triggered", "program_id": 7, "node": "sl", "print": 2964, "t": 1792203364853}
+{"contract_version": 1, "type": "node.filled", "program_id": 7, "node": "sl", "qty": 1, "price": 2964, "fee_cents": 104, "t": 1792203364853}
+{"contract_version": 1, "type": "node.cancelled", "program_id": 7, "node": "tp", "reason": "oco", "t": 1792203364853}
+{"contract_version": 1, "type": "program.halted", "program_id": 7, "status": "halted", "realized_loss_cents": 3734, "fees_cents": 134, "trades": 2, "t": 1792203364853}

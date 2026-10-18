@@ -1,0 +1,67 @@
+{
+  "contract_version": 1,
+  "backend": "minsky",
+  "source_hash": "sha256:dd866a1ac15e61de1a969e93383c5bf37d00009d1aba52683a1db73e9af4ad03",
+  "instruments": [
+    "ETH"
+  ],
+  "nodes": [
+    {
+      "id": "entry",
+      "kind": "limit",
+      "instrument": "ETH",
+      "side": "buy",
+      "qty": 1,
+      "price": 3000,
+      "trigger": null,
+      "reduce_only": false,
+      "parent": null,
+      "oco": null,
+      "terminal": false
+    },
+    {
+      "id": "sl",
+      "kind": "stop_limit",
+      "instrument": "ETH",
+      "side": "sell",
+      "qty": 1,
+      "price": 2983,
+      "trigger": 2988,
+      "reduce_only": true,
+      "parent": "entry",
+      "oco": "g1",
+      "terminal": false
+    },
+    {
+      "id": "tp",
+      "kind": "limit",
+      "instrument": "ETH",
+      "side": "sell",
+      "qty": 1,
+      "price": 3030,
+      "trigger": null,
+      "reduce_only": true,
+      "parent": "entry",
+      "oco": "g1",
+      "terminal": false
+    }
+  ],
+  "deploy_plan": [
+    [
+      "entry"
+    ],
+    [
+      "sl",
+      "tp"
+    ]
+  ],
+  "report": {
+    "nodes_total": 3,
+    "native": 3,
+    "relayed": 0,
+    "locked_collateral_cents": 300000
+  },
+  "warnings": [
+    "line 3: sl: allow 5 < max_gap_ticks 25; the verifier will almost certainly find a gap path"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "contract_version": 1,
+  "backend": "minsky",
+  "source_hash": "sha256:04bc90f8810bd32ec30bb5cb3debc9315817cf879f3022bc9ad75b0294a08165",
+  "instruments": [
+    "ETH"
+  ],
+  "nodes": [
+    {
+      "id": "entry",
+      "kind": "limit",
+      "instrument": "ETH",
+      "side": "buy",
+      "qty": 1,
+      "price": 3000,
+      "trigger": null,
+      "reduce_only": false,
+      "parent": null,
+      "oco": null,
+      "terminal": false
+    },
+    {
+      "id": "sl",
+      "kind": "stop_limit",
+      "instrument": "ETH",
+      "side": "sell",
+      "qty": 1,
+      "price": 2963,
+      "trigger": 2988,
+      "reduce_only": true,
+      "parent": "entry",
+      "oco": "g1",
+      "terminal": false
+    },
+    {
+      "id": "tp",
+      "kind": "limit",
+      "instrument": "ETH",
+      "side": "sell",
+      "qty": 1,
+      "price": 3030,
+      "trigger": null,
+      "reduce_only": true,
+      "parent": "entry",
+      "oco": "g1",
+      "terminal": false
+    }
+  ],
+  "deploy_plan": [
+    [
+      "entry"
+    ],
+    [
+      "sl",
+      "tp"
+    ]
+  ],
+  "report": {
+    "nodes_total": 3,
+    "native": 3,
+    "relayed": 0,
+    "locked_collateral_cents": 300000
+  },
+  "warnings": []
+}

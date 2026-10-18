@@ -1,0 +1,34 @@
+{
+  "_comment": "Egress policy for one delegate sandbox (BUILD_B_GATEWAY.md B8). Exactly two destinations. Hosts are filled in per sandbox by agent/sandbox.py from GATEWAY_URL and CHALK_AI_GATEWAY_URL. The host list is enforced at the network layer by Daytona (domain_allow_list for names, network_allow_list for CIDRs). The per-route list is what the delegate is allowed to use on the gateway; the gateway enforces it by key class (an author key gets 403 on deploy/pause/cancel and the owner routes), not by the network. No venue address, no owner key, no general internet.",
+  "version": 1,
+  "default": "deny",
+  "destinations": [
+    {
+      "name": "gateway",
+      "host": "${GATEWAY_HOST}",
+      "ports": [443, 80, "${GATEWAY_PORT}"],
+      "routes": [
+        {"method": "POST", "path": "/program"},
+        {"method": "POST", "path": "/program/{id}/repair"},
+        {"method": "GET", "path": "/program/{id}"},
+        {"method": "GET", "path": "/program/{id}/counterexample"},
+        {"method": "GET", "path": "/healthz"}
+      ],
+      "never": [
+        {"method": "POST", "path": "/program/{id}/deploy", "why": "needs a bk_ key the delegate never holds"},
+        {"method": "POST", "path": "/program/{id}/pause"},
+        {"method": "POST", "path": "/program/{id}/cancel"},
+        {"method": "*", "path": "/account/*", "why": "owner routes"},
+        {"method": "POST", "path": "/order", "why": "the route does not exist"}
+      ]
+    },
+    {
+      "name": "chalk-ai-gateway",
+      "host": "${CHALK_HOST}",
+      "ports": [443, "${CHALK_PORT}"],
+      "routes": [{"method": "POST", "path": "/v1/messages"}],
+      "why": "the sandbox's only route to a model"
+    }
+  ],
+  "denied": ["venued", "exchange", "*"]
+}

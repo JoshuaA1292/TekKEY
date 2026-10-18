@@ -1,0 +1,19 @@
+{
+  "name": "bounded-key-phone",
+  "version": "1.0.0",
+  "description": "Photon 2.0 Spectrum sidecar: the owner's phone for the bounded-key gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "spectrum-ts": "^12.11.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
