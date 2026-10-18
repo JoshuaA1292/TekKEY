@@ -21,3 +21,5 @@ gateway/data/*.pid
 stage1-orderbook-computer/*.pdf
 .DS_Store
 gateway/data/race.db
+gateway/data/*.db-wal
+gateway/data/*.db-shm
