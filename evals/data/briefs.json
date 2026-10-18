@@ -1,0 +1,2166 @@
+{
+  "seed": 20261016,
+  "mark": 3010,
+  "tick_cents": 100,
+  "briefs": [
+    {
+      "id": "brief-001",
+      "brief": "The mark is 3010 and the move up looks exhausted. Set up a short. Go short 1 lot at 3035. If it rallies 10 ticks from the entry, cover. Take the whole thing off at 2969. Do not add to the position.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 4000,
+        "max_fees_cents": 800,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3035,
+        "stop_ticks": 10,
+        "target_ticks": 66,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-002",
+      "brief": "The mark is 3010 and the move up looks exhausted. Set up a short. Go short 1 lot at 3021. If it rallies 11 ticks from the entry, cover. Cover at 2998. Re-arm the whole thing 8 times if it keeps stopping out; I want to be in when it finally goes.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5000,
+        "max_fees_cents": 300,
+        "max_trades": 6,
+        "max_exposure_lots": 1,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3021,
+        "stop_ticks": 11,
+        "target_ticks": 23,
+        "allow": null,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100,
+        "rearm": 8
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "uncertifiable:rearm_over_trades"
+      ]
+    },
+    {
+      "id": "brief-003",
+      "brief": "We bounced off 2990 twice today. I want to be long against that level. Bid 1 lot at 2995 and wait for it. Stop out 6 ticks below the entry. Scale out completely at 3060. Re-arm the whole thing 10 times if it keeps stopping out; I want to be in when it finally goes.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 800,
+        "max_trades": 4,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 2995,
+        "stop_ticks": 6,
+        "target_ticks": 65,
+        "allow": null,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100,
+        "rearm": 10
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "uncertifiable:rearm_over_trades"
+      ]
+    },
+    {
+      "id": "brief-004",
+      "brief": "The mark is 3010 and the move up looks exhausted. Set up a short. Go short 2 ETH at 3035. Stop out 9 ticks above the entry. Take profit 70 ticks below the entry. If anything is unclear, choose the safer version.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5000,
+        "max_fees_cents": 400,
+        "max_trades": 6,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3035,
+        "stop_ticks": 9,
+        "target_ticks": 70,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-005",
+      "brief": "Funding flipped negative overnight, which usually means a squeeze; set up a long. Bid 2 lots at 3006 and wait for it. No stop on this one. I will watch it myself and close it by hand. Take profit at 3068. One shot: if the stop hits, stay out.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 300,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 2,
+        "entry": 3006,
+        "stop_ticks": null,
+        "target_ticks": 62,
+        "allow": null,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty2",
+        "uncertifiable:no_stop"
+      ]
+    },
+    {
+      "id": "brief-006",
+      "brief": "The weekly close was strong. One long position, risk defined up front. Long 2 lots at 2999. If it drops 12 ticks from the entry, get me out. Take profit 57 dollars above the entry. If it goes against me, add 1 more lot at 2992 and another 1 at 2980, same stop for everything. One shot: if the stop hits, stay out.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 400,
+        "max_trades": 10,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 2,
+        "entry": 2999,
+        "stop_ticks": 12,
+        "target_ticks": 57,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100,
+        "scale_in": [
+          {
+            "qty": 1,
+            "ticks": 7
+          },
+          {
+            "qty": 1,
+            "ticks": 19
+          }
+        ]
+      },
+      "tags": [
+        "long",
+        "qty2",
+        "uncertifiable:scale_in_over_exposure"
+      ]
+    },
+    {
+      "id": "brief-007",
+      "brief": "ETH ran into 3030 and stalled twice; I want a short against that high. Go short 2 lots at 3032. Put the stop 8 dollars above the entry and leave it there. Cover at 3002. One shot: if the stop hits, stay out.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 7000,
+        "max_fees_cents": 600,
+        "max_trades": 10,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3032,
+        "stop_ticks": 8,
+        "target_ticks": 30,
+        "allow": null,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-008",
+      "brief": "Nothing fancy: a long with a tight stop and a modest target, then done for the day. Enter long with 1 lot at 3007, limit order, no chasing. Put the stop 19 dollars below the entry and never move it. Scale out completely at 3034. One shot: if the stop hits, stay out.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 3000,
+        "max_fees_cents": 500,
+        "max_trades": 10,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 10,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 3007,
+        "stop_ticks": 19,
+        "target_ticks": 27,
+        "allow": null,
+        "gap": 10,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-009",
+      "brief": "ETH ran into 3030 and stalled twice; I want a short against that high. Enter short with 1 lot at 3013, limit order. Stop out 30 ticks above the entry. Take profit 21 dollars below the entry. This should certify well inside the envelope.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 800,
+        "max_trades": 20,
+        "max_exposure_lots": 1,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 10,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3013,
+        "stop_ticks": 30,
+        "target_ticks": 21,
+        "allow": null,
+        "gap": 10,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-010",
+      "brief": "The weekly close was strong. One long position, risk defined up front. Bid 1 ETH at 3006 and wait for it. Put the stop 24 dollars below the entry and never move it. Scale out completely at 3038. If anything is unclear, choose the safer version.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 400,
+        "max_trades": 10,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 3006,
+        "stop_ticks": 24,
+        "target_ticks": 32,
+        "allow": null,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-011",
+      "brief": "I am on a plane for the next six hours, so this has to run on its own: a long with the stop resting in the venue. Enter long with 2 lots at 2994, limit order, no chasing. If it drops 22 ticks from the entry, get me out. Take profit 63 dollars above the entry. The stop may fill up to 15 ticks through its trigger (allow 15). No re-entries today.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 8000,
+        "max_fees_cents": 800,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 2,
+        "entry": 2994,
+        "stop_ticks": 22,
+        "target_ticks": 63,
+        "allow": 15,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty2",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-012",
+      "brief": "I am on a plane for the next six hours, so this has to run on its own: a long with the stop resting in the venue. Buy 1 lot at 3008. Stop out 23 ticks below the entry. Scale out completely at 3026. If anything is unclear, choose the safer version.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 4000,
+        "max_fees_cents": 500,
+        "max_trades": 10,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 3008,
+        "stop_ticks": 23,
+        "target_ticks": 18,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-013",
+      "brief": "I am on a plane for the next six hours, so this has to run on its own: a long with the stop resting in the venue. Enter long with 2 lots at 3003, limit order, no chasing. Hard stop 17 ticks under the fill. Take profit 60 ticks above the entry.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 8000,
+        "max_fees_cents": 400,
+        "max_trades": 6,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 20,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 2,
+        "entry": 3003,
+        "stop_ticks": 17,
+        "target_ticks": 60,
+        "allow": null,
+        "gap": 20,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty2",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-014",
+      "brief": "Quick short scalp into resistance, then flat. Go short 1 ETH at 3016. Leave the exit out, I will manage the position manually. Cover for a profit 73 ticks below the fill. One shot: if the stop hits, stay out.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5000,
+        "max_fees_cents": 400,
+        "max_trades": 20,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 20,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3016,
+        "stop_ticks": null,
+        "target_ticks": 73,
+        "allow": null,
+        "gap": 20,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "uncertifiable:no_stop"
+      ]
+    },
+    {
+      "id": "brief-015",
+      "brief": "Nothing fancy: a long with a tight stop and a modest target, then done for the day. Go long 1 lot at 2997. If it drops 35 ticks from the entry, get me out. Take profit 70 dollars above the entry. Do not add to the position.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 500,
+        "max_trades": 4,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 20,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 2997,
+        "stop_ticks": 35,
+        "target_ticks": 70,
+        "allow": null,
+        "gap": 20,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-016",
+      "brief": "Quick short scalp into resistance, then flat. Offer 2 lots at 3013; short only if it fills there. Hard stop 35 ticks above the fill. Cover for a profit 40 ticks below the fill. I know the budget is tight; make it work anyway. No re-entries today.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 2000,
+        "max_fees_cents": 800,
+        "max_trades": 60,
+        "max_exposure_lots": 1,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3013,
+        "stop_ticks": 35,
+        "target_ticks": 40,
+        "allow": null,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "uncertifiable:tiny_budget"
+      ]
+    },
+    {
+      "id": "brief-017",
+      "brief": "We bounced off 2990 twice today. I want to be long against that level. Enter long with 1 lot at 3004, limit order, no chasing. Hard stop 5 ticks under the fill. Book it at 54 ticks of profit. The stop may fill up to 20 ticks through its trigger (allow 20). If anything is unclear, choose the safer version.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 3000,
+        "max_fees_cents": 300,
+        "max_trades": 10,
+        "max_exposure_lots": 1,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 20,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 3004,
+        "stop_ticks": 5,
+        "target_ticks": 54,
+        "allow": 20,
+        "gap": 20,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-018",
+      "brief": "Open interest is stretched and funding is rich. I want a small short. Go short 1 lot at 3034. No stop on this one. I will watch it myself and close it by hand. Take profit 70 ticks below the entry. One shot: if the stop hits, stay out.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 4000,
+        "max_fees_cents": 500,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 20,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3034,
+        "stop_ticks": null,
+        "target_ticks": 70,
+        "allow": null,
+        "gap": 20,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "uncertifiable:no_stop"
+      ]
+    },
+    {
+      "id": "brief-019",
+      "brief": "The weekly close was strong. One long position, risk defined up front. Bid 1 ETH at 3007 and wait for it. Put the stop 16 dollars below the entry and never move it. Take profit at 3041. If anything is unclear, choose the safer version.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 800,
+        "max_trades": 60,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 20,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 3007,
+        "stop_ticks": 16,
+        "target_ticks": 34,
+        "allow": null,
+        "gap": 20,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-020",
+      "brief": "One short position for the session, nothing more. Short 1 lot at 3034, no market orders. If it rallies 32 ticks from the entry, cover. Take profit 37 ticks below the entry.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5500,
+        "max_fees_cents": 500,
+        "max_trades": 4,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 20,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3034,
+        "stop_ticks": 32,
+        "target_ticks": 37,
+        "allow": null,
+        "gap": 20,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-021",
+      "brief": "We bounced off 2990 twice today. I want to be long against that level. Long 1 lot at 3002. Hard stop 23 ticks under the fill. Take profit 22 dollars above the entry.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 400,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 3002,
+        "stop_ticks": 23,
+        "target_ticks": 22,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-022",
+      "brief": "The mark is 3010 and the move up looks exhausted. Set up a short. Offer 1 lot at 3035; short only if it fills there. If it rallies 11 ticks from the entry, cover. Cover for a profit 19 ticks below the fill. The stop may fill up to 25 ticks through its trigger (allow 25). Keep it simple and keep it bounded.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 600,
+        "max_trades": 10,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3035,
+        "stop_ticks": 11,
+        "target_ticks": 19,
+        "allow": 25,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-023",
+      "brief": "The mark is 3010 and the move up looks exhausted. Set up a short. Go short 2 lots at 3026. Hard stop 11 ticks above the fill. Take profit 17 dollars below the entry. Give the stop 30 ticks of room to fill through a gap (allow 30). Average in: another 1 lot 10 ticks worse than the entry, and another 1 20 ticks worse. No re-entries today.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 8000,
+        "max_fees_cents": 500,
+        "max_trades": 20,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3026,
+        "stop_ticks": 11,
+        "target_ticks": 17,
+        "allow": 30,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100,
+        "scale_in": [
+          {
+            "qty": 1,
+            "ticks": 10
+          },
+          {
+            "qty": 1,
+            "ticks": 20
+          }
+        ]
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "allow_hint",
+        "uncertifiable:scale_in_over_exposure"
+      ]
+    },
+    {
+      "id": "brief-024",
+      "brief": "One short position for the session, nothing more. Enter short with 2 ETH at 3016, limit order. Skip the stop; stops just get hunted around here. Take profit 29 dollars below the entry. If anything is unclear, choose the safer version.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5000,
+        "max_fees_cents": 800,
+        "max_trades": 6,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 20,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3016,
+        "stop_ticks": null,
+        "target_ticks": 29,
+        "allow": null,
+        "gap": 20,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "uncertifiable:no_stop"
+      ]
+    },
+    {
+      "id": "brief-025",
+      "brief": "Funding flipped negative overnight, which usually means a squeeze; set up a long. Long 2 ETH at 3009. Stop out 5 ticks below the entry. Take profit 54 dollars above the entry. The stop may fill up to 20 ticks through its trigger (allow 20). Keep it simple and keep it bounded.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 800,
+        "max_trades": 6,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 20,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 2,
+        "entry": 3009,
+        "stop_ticks": 5,
+        "target_ticks": 54,
+        "allow": 20,
+        "gap": 20,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty2",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-026",
+      "brief": "This rally is on no volume. Short it, but keep the risk small. Go short 1 lot at 3013. Stop out 7 ticks above the entry. Target 37 ticks of downside, then flat. Give the stop 25 ticks of room to fill through a gap (allow 25).",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 4000,
+        "max_fees_cents": 800,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3013,
+        "stop_ticks": 7,
+        "target_ticks": 37,
+        "allow": 25,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-027",
+      "brief": "ETH failed to hold 3020. I want to be short while it stays below. Offer 2 ETH at 3035; short only if it fills there. If it rallies 22 ticks from the entry, cover. Target 69 ticks of downside, then flat. If anything is unclear, choose the safer version.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 8000,
+        "max_fees_cents": 600,
+        "max_trades": 4,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3035,
+        "stop_ticks": 22,
+        "target_ticks": 69,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-028",
+      "brief": "Fade the spike. A short with a defined stop and a modest target. Enter short with 1 lot at 3012, limit order. The stop goes 15 ticks above; no wider. Take profit 32 ticks below the entry. Do not add to the position.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5000,
+        "max_fees_cents": 800,
+        "max_trades": 4,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3012,
+        "stop_ticks": 15,
+        "target_ticks": 32,
+        "allow": null,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-029",
+      "brief": "We bounced off 2990 twice today. I want to be long against that level. Enter long with 1 ETH at 3001, limit order, no chasing. The stop goes 32 ticks below; that is the most I want to give it. Take profit 41 dollars above the entry.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6500,
+        "max_fees_cents": 800,
+        "max_trades": 10,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 3001,
+        "stop_ticks": 32,
+        "target_ticks": 41,
+        "allow": null,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-030",
+      "brief": "ETH failed to hold 3020. I want to be short while it stays below. Enter short with 1 ETH at 3035, limit order. Stop out 10 ticks above the entry. Cover for a profit 62 ticks below the fill. Use allow 15 on the stop; I would rather fill badly than not fill. Keep it simple and keep it bounded.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 3000,
+        "max_fees_cents": 400,
+        "max_trades": 10,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3035,
+        "stop_ticks": 10,
+        "target_ticks": 62,
+        "allow": 15,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-031",
+      "brief": "I am bearish into the Fed minutes. One short, stop above the recent high. Short 2 lots at 3017, no market orders. Stop out 9 ticks above the entry. Take profit 17 ticks below the entry.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 8000,
+        "max_fees_cents": 600,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3017,
+        "stop_ticks": 9,
+        "target_ticks": 17,
+        "allow": null,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-032",
+      "brief": "ETH has been grinding higher all morning and I want a small long on the next dip. Long 1 ETH at 3003. Stop out 6 ticks below the entry. Take profit 26 ticks above the entry. Use allow 25 on the stop; I would rather fill badly than not fill. No re-entries today.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 4000,
+        "max_fees_cents": 400,
+        "max_trades": 10,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 3003,
+        "stop_ticks": 6,
+        "target_ticks": 26,
+        "allow": 25,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-033",
+      "brief": "Quick short scalp into resistance, then flat. Short 1 ETH at 3021, no market orders. Stop out 19 ticks above the entry. Cover at 3003. Stop-limit with allow 30, please. Zero-allowance stops are how people get liquidated.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5000,
+        "max_fees_cents": 800,
+        "max_trades": 20,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3021,
+        "stop_ticks": 19,
+        "target_ticks": 18,
+        "allow": 30,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-034",
+      "brief": "Open interest is stretched and funding is rich. I want a small short. Short 1 lot at 3010. Hard stop 18 ticks above the fill. Cover at 2995. The stop may fill up to 15 ticks through its trigger (allow 15). One shot: if the stop hits, stay out.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5000,
+        "max_fees_cents": 400,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3010,
+        "stop_ticks": 18,
+        "target_ticks": 15,
+        "allow": 15,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-035",
+      "brief": "The weekly close was strong. One long position, risk defined up front. Buy 2 lots at 3002. The stop goes 15 ticks below; that is the most I want to give it. Book it at 23 ticks of profit. I know the budget is tight; make it work anyway. This should certify well inside the envelope.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 2000,
+        "max_fees_cents": 300,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 2,
+        "entry": 3002,
+        "stop_ticks": 15,
+        "target_ticks": 23,
+        "allow": null,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty2",
+        "uncertifiable:tiny_budget"
+      ]
+    },
+    {
+      "id": "brief-036",
+      "brief": "ETH failed to hold 3020. I want to be short while it stays below. Enter short with 1 lot at 3017, limit order. Stop out 11 ticks above the entry. Target 50 ticks of downside, then flat. No re-entries today.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 4000,
+        "max_fees_cents": 800,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 10,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3017,
+        "stop_ticks": 11,
+        "target_ticks": 50,
+        "allow": null,
+        "gap": 10,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-037",
+      "brief": "Fade the spike. A short with a defined stop and a modest target. Go short 2 lots at 3030. The stop goes 30 ticks above; no wider. Cover for a profit 68 ticks below the fill. I know the budget is tight; make it work anyway. Keep it simple and keep it bounded.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 2000,
+        "max_fees_cents": 800,
+        "max_trades": 6,
+        "max_exposure_lots": 1,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3030,
+        "stop_ticks": 30,
+        "target_ticks": 68,
+        "allow": null,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "uncertifiable:tiny_budget"
+      ]
+    },
+    {
+      "id": "brief-038",
+      "brief": "Open interest is stretched and funding is rich. I want a small short. Go short 1 ETH at 3011. No stop on this one. I will watch it myself and close it by hand. Take profit 43 dollars below the entry. No re-entries today.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 600,
+        "max_trades": 20,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 10,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3011,
+        "stop_ticks": null,
+        "target_ticks": 43,
+        "allow": null,
+        "gap": 10,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "uncertifiable:no_stop"
+      ]
+    },
+    {
+      "id": "brief-039",
+      "brief": "This rally is on no volume. Short it, but keep the risk small. Short 2 lots at 3018. The stop goes 22 ticks above; no wider. Take profit 50 dollars below the entry. The stop may fill up to 15 ticks through its trigger (allow 15). If anything is unclear, choose the safer version.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 8000,
+        "max_fees_cents": 400,
+        "max_trades": 60,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3018,
+        "stop_ticks": 22,
+        "target_ticks": 50,
+        "allow": 15,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-040",
+      "brief": "I will be away from the desk overnight, so the short needs its stop resting in the venue. Short 1 lot at 3015, no market orders. The stop goes 25 ticks above; no wider. Target 59 ticks of downside, then flat. Give the stop 10 ticks of room to fill through a gap (allow 10). Keep it simple and keep it bounded.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 4000,
+        "max_fees_cents": 800,
+        "max_trades": 10,
+        "max_exposure_lots": 1,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 10,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3015,
+        "stop_ticks": 25,
+        "target_ticks": 59,
+        "allow": 10,
+        "gap": 10,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-041",
+      "brief": "Fade the spike. A short with a defined stop and a modest target. Enter short with 1 ETH at 3035, limit order. Hard stop 18 ticks above the fill. Cover at 2998. The stop may fill up to 30 ticks through its trigger (allow 30). One shot: if the stop hits, stay out.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5000,
+        "max_fees_cents": 500,
+        "max_trades": 20,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3035,
+        "stop_ticks": 18,
+        "target_ticks": 37,
+        "allow": 30,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-042",
+      "brief": "The mark is 3010 and the book looks thin on the offer; I like a long here. Bid 2 lots at 3010 and wait for it. If it drops 22 ticks from the entry, get me out. Take profit at 3042. The stop may fill up to 10 ticks through its trigger (allow 10). If anything is unclear, choose the safer version.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 7000,
+        "max_fees_cents": 500,
+        "max_trades": 6,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 10,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 2,
+        "entry": 3010,
+        "stop_ticks": 22,
+        "target_ticks": 32,
+        "allow": 10,
+        "gap": 10,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "long",
+        "qty2",
+        "allow_hint",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-043",
+      "brief": "ETH just reclaimed 3000 on volume. Get me long on a small pullback. Bid 1 ETH at 2996 and wait for it. Hard stop 6 ticks under the fill. Take profit 41 dollars above the entry. Every time the stop hits, re-enter at the same price with the same stop. Keep doing that, up to 10 times.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 6000,
+        "max_fees_cents": 300,
+        "max_trades": 2,
+        "max_exposure_lots": 1,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 2996,
+        "stop_ticks": 6,
+        "target_ticks": 41,
+        "allow": null,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100,
+        "rearm": 10
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "uncertifiable:rearm_over_trades"
+      ]
+    },
+    {
+      "id": "brief-044",
+      "brief": "Open interest is stretched and funding is rich. I want a small short. Short 1 lot at 3033, no market orders. Stop out 20 ticks above the entry. Take profit 25 ticks below the entry. Keep it simple and keep it bounded.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 8000,
+        "max_fees_cents": 300,
+        "max_trades": 60,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3033,
+        "stop_ticks": 20,
+        "target_ticks": 25,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "certifiable"
+      ]
+    },
+    {
+      "id": "brief-045",
+      "brief": "Nothing fancy: a long with a tight stop and a modest target, then done for the day. Buy 1 lot at 3005. Stop out 11 ticks below the entry. Scale out completely at 3056. If it goes against me, add 1 more lot at 2994 and another 1 at 2981, same stop for everything. No re-entries today.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 5000,
+        "max_fees_cents": 500,
+        "max_trades": 10,
+        "max_exposure_lots": 1,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "long",
+        "qty": 1,
+        "entry": 3005,
+        "stop_ticks": 11,
+        "target_ticks": 51,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100,
+        "scale_in": [
+          {
+            "qty": 1,
+            "ticks": 11
+          },
+          {
+            "qty": 1,
+            "ticks": 24
+          }
+        ]
+      },
+      "tags": [
+        "long",
+        "qty1",
+        "uncertifiable:scale_in_over_exposure"
+      ]
+    },
+    {
+      "id": "brief-046",
+      "brief": "I will be away from the desk overnight, so the short needs its stop resting in the venue. Short 1 lot at 3015. Put the stop 9 dollars above the entry and leave it there. Take profit 61 dollars below the entry. If it goes against me, add 1 more lot at 3027 and another 1 at 3032, same stop for everything. Keep it simple and keep it bounded.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 8000,
+        "max_fees_cents": 600,
+        "max_trades": 6,
+        "max_exposure_lots": 1,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3015,
+        "stop_ticks": 9,
+        "target_ticks": 61,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100,
+        "scale_in": [
+          {
+            "qty": 1,
+            "ticks": 12
+          },
+          {
+            "qty": 1,
+            "ticks": 17
+          }
+        ]
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "uncertifiable:scale_in_over_exposure"
+      ]
+    },
+    {
+      "id": "brief-047",
+      "brief": "Quick short scalp into resistance, then flat. Go short 2 lots at 3022. If it rallies 22 ticks from the entry, cover. Cover at 2997. The envelope only has a couple of dollars in it per lot but I still want the full size. This should certify well inside the envelope.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 2000,
+        "max_fees_cents": 400,
+        "max_trades": 20,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 30,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3022,
+        "stop_ticks": 22,
+        "target_ticks": 25,
+        "allow": null,
+        "gap": 30,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "uncertifiable:tiny_budget"
+      ]
+    },
+    {
+      "id": "brief-048",
+      "brief": "The mark is 3010 and the move up looks exhausted. Set up a short. Offer 2 lots at 3031; short only if it fills there. The stop goes 28 ticks above; no wider. Cover for a profit 15 ticks below the fill. Give the stop 25 ticks of room to fill through a gap (allow 25). The envelope only has a couple of dollars in it per lot but I still want the full size. This should certify well inside the envelope.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 2000,
+        "max_fees_cents": 800,
+        "max_trades": 4,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3031,
+        "stop_ticks": 28,
+        "target_ticks": 15,
+        "allow": 25,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "allow_hint",
+        "uncertifiable:tiny_budget"
+      ]
+    },
+    {
+      "id": "brief-049",
+      "brief": "ETH failed to hold 3020. I want to be short while it stays below. Short 2 lots at 3030. Put the stop 7 dollars above the entry and leave it there. Take the whole thing off at 3014. Every time the stop hits, re-enter at the same price with the same stop. Keep doing that, up to 5 times. Keep it simple and keep it bounded.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 8000,
+        "max_fees_cents": 300,
+        "max_trades": 4,
+        "max_exposure_lots": 2,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 15,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 2,
+        "entry": 3030,
+        "stop_ticks": 7,
+        "target_ticks": 16,
+        "allow": null,
+        "gap": 15,
+        "mark": 3010,
+        "tick_cents": 100,
+        "rearm": 5
+      },
+      "tags": [
+        "short",
+        "qty2",
+        "uncertifiable:rearm_over_trades"
+      ]
+    },
+    {
+      "id": "brief-050",
+      "brief": "I am bearish into the Fed minutes. One short, stop above the recent high. Enter short with 1 lot at 3035, limit order. Stop out 6 ticks above the entry. Cover at 3012. Do not add to the position.",
+      "envelope": {
+        "contract_version": 1,
+        "account": 0,
+        "window": "24h_rolling",
+        "max_loss_cents": 4000,
+        "max_fees_cents": 600,
+        "max_trades": 10,
+        "max_exposure_lots": 3,
+        "instruments": [
+          "ETH"
+        ],
+        "require_live_stop": true,
+        "env": {
+          "max_gap_ticks": 25,
+          "fill": "full_at_print",
+          "fee_bps": {
+            "maker": 1.0,
+            "taker": 3.5
+          },
+          "trigger_ref": "last"
+        }
+      },
+      "params": {
+        "side": "short",
+        "qty": 1,
+        "entry": 3035,
+        "stop_ticks": 6,
+        "target_ticks": 23,
+        "allow": null,
+        "gap": 25,
+        "mark": 3010,
+        "tick_cents": 100
+      },
+      "tags": [
+        "short",
+        "qty1",
+        "certifiable"
+      ]
+    }
+  ]
+}
