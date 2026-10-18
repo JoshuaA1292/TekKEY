@@ -1,0 +1,15 @@
+.venv-gateway
+**/__pycache__
+**/*.pyc
+.pytest_cache
+.git
+minsky/build
+minsky/**
+stage1-orderbook-computer
+evals/results
+**/*.db
+**/*.db-wal
+**/*.db-shm
+agent-transcripts
+.cursor
+**/.DS_Store

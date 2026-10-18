@@ -1,0 +1,23 @@
+# credentials: never
+.env
+.env.*
+!.env.example
+deploy/vercel/.vercel/
+deploy/vercel/.env.local
+# environments and caches
+.venv-gateway/
+__pycache__/
+.pytest_cache/
+phone/node_modules/
+*.pyc
+# built binaries (make -C minsky rebuilds them)
+minsky/build/
+stage1-orderbook-computer/build/
+# runtime logs and venue state files; the databases with the results are kept
+gateway/data/*.log
+gateway/data/*.state.json
+gateway/data/*.pid
+# third-party paper
+stage1-orderbook-computer/*.pdf
+.DS_Store
+gateway/data/race.db
